@@ -22,7 +22,7 @@
   <project name="aosp-g3/platform_build" path="build" remote="github" revision="aosp-mm" >
   <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-  <project name="device_qcom_common" path="device/qcom/common" remote="aosp-caf" />
+  <project name="android_device_qcom_common" path="device/qcom/common" remote="cm" />
   <project name="device_qcom_sepolicy" path="device/qcom/sepolicy" remote="aosp-caf" />
   <project name="platform_art" path="art" remote="aosp-caf" />
   <project name="platform_bionic" path="bionic" remote="aosp-caf" />
@@ -56,8 +56,6 @@
   <project name="platform_frameworks_av" path="frameworks/av" remote="aosp-caf" />
   <project name="platform_frameworks_opt_telephony" path="frameworks/opt/telephony" remote="aosp-caf" />
   <project name="platform_hardware_libhardware_legacy" path="hardware/libhardware_legacy" remote="aosp-caf" />
-  <project name="platform_hardware_qcom_bt" path="hardware/qcom/bt" remote="aosp-caf" />
-  <project name="platform_hardware_qcom_bt" path="hardware/qcom/bt-caf" revision="mm6.0-caf" remote="aosp-caf" />
   <project name="platform_hardware_qcom_keymaster" path="hardware/qcom/keymaster" remote="aosp-caf" />
   <project name="platform_hardware_qcom_wlan" path="hardware/qcom/wlan" remote="aosp-caf" />
   <project name="platform_hardware_qcom_wlan" path="hardware/qcom/wlan-caf" revision="mm6.0-caf" remote="aosp-caf" />
@@ -94,6 +92,14 @@
   <project name="android_hardware_qcom_display" path="hardware/qcom/display" remote="cm" />
   <project name="android_hardware_qcom_gps" path="hardware/qcom/gps" remote="cm" />
   <project name="android_hardware_qcom_media" path="hardware/qcom/media/default" remote="cm" />
+  <project name="android_hardware_qcom_bt" path="hardware/qcom/bt" remote="cm" />
+  <project name="android_hardware_qcom_bt" path="hardware/qcom/bt-caf" revision="cm-13.0-caf" remote="cm" />
+  <project name="android_external_libnfc-nci" path="external/libnfc-nci" remote="cm" />
+  <project name="android_external_libnfc-nxp" path="external/libnfc-nxp" remote="cm" />
+  <project name="android_hardware_broadcom_wlan" path="hardware/broadcom/wlan" groups="pdk,broadcom_wlan" remote="cm" />
+  <project name="android_hardware_broadcom_libbt" path="hardware/broadcom/libbt" groups="pdk" remote="cm" />
+  <project name="android_packages_apps_Gallery2" path="packages/apps/Gallery2" remote="cm" />
+  <project name="android_system_bt" path="system/bt" groups="pdk" remote="cm" />
 <!-- END CYANOGENMOD -->
 
 <!-- BEGIN CODEAURORA -->
@@ -210,8 +216,6 @@
   <project groups="pdk" name="platform/external/liblzf" path="external/liblzf"/>
   <project groups="pdk" name="platform/external/libmpeg2" path="external/libmpeg2"/>
   <project groups="pdk-cw-fs" name="platform/external/libmtp" path="external/libmtp"/>
-  <project groups="pdk" name="platform/external/libnfc-nci" path="external/libnfc-nci"/>
-  <project groups="pdk" name="platform/external/libnfc-nxp" path="external/libnfc-nxp"/>
   <project groups="pdk" name="platform/external/libnl" path="external/libnl"/>
   <project groups="pdk" name="platform/external/libogg" path="external/libogg"/>
   <project groups="pdk" name="platform/external/libopus" path="external/libopus"/>
@@ -341,7 +345,6 @@
   <project groups="pdk-cw-fs" name="platform/frameworks/volley" path="frameworks/volley"/>
   <project groups="pdk-cw-fs" name="platform/frameworks/webview" path="frameworks/webview"/>
   <project groups="pdk-cw-fs" name="platform/frameworks/wilhelm" path="frameworks/wilhelm"/>
-  <project groups="pdk" name="platform/hardware/broadcom/libbt" path="hardware/broadcom/libbt"/>
   <project groups="pdk" name="platform/libcore" path="libcore"/>
   <project groups="pdk" name="platform/libnativehelper" path="libnativehelper"/>
   <project groups="pdk" name="platform/ndk" path="ndk"/>
@@ -350,7 +353,6 @@
   <project name="platform/packages/apps/Calculator" path="packages/apps/Calculator"/>
   <project name="platform/packages/apps/Calendar" path="packages/apps/Calendar"/>
   <project name="platform/packages/apps/Camera" path="packages/apps/Camera"/>
-  <project name="platform/packages/apps/Camera2" path="packages/apps/Camera2"/>
   <project name="platform/packages/apps/CarrierConfig" path="packages/apps/CarrierConfig"/>
   <project name="platform/packages/apps/CellBroadcastReceiver" path="packages/apps/CellBroadcastReceiver"/>
   <project groups="pdk-cw-fs" name="platform/packages/apps/CertInstaller" path="packages/apps/CertInstaller"/>
@@ -363,7 +365,6 @@
   <project name="platform/packages/apps/Exchange" path="packages/apps/Exchange"/>
   <project name="platform/packages/apps/FMRadio" path="packages/apps/FMRadio"/>
   <project name="platform/packages/apps/Gallery" path="packages/apps/Gallery"/>
-  <project name="platform/packages/apps/Gallery2" path="packages/apps/Gallery2"/>
   <project name="platform/packages/apps/HTMLViewer" path="packages/apps/HTMLViewer"/>
   <project name="platform/packages/apps/InCallUI" path="packages/apps/InCallUI"/>
   <project name="platform/packages/apps/KeyChain" path="packages/apps/KeyChain"/>
@@ -446,7 +447,6 @@
   <project groups="pdk" name="platform/prebuilts/sdk" path="prebuilts/sdk"/>
   <project groups="pdk,tools" name="platform/prebuilts/tools" path="prebuilts/tools" clone-depth="1"/>
   <project groups="pdk-cw-fs" name="platform/sdk" path="sdk" clone-depth="1"/>
-  <project groups="pdk" name="platform/system/bt" path="system/bt"/>
   <project groups="pdk" name="platform/system/gatekeeper" path="system/gatekeeper"/>
   <project groups="pdk" name="platform/system/keymaster" path="system/keymaster"/>
   <project groups="pdk" name="platform/system/netd" path="system/netd"/>
