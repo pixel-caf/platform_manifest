@@ -1,4 +1,4 @@
-AOSP-CAF
+AOSP-CAF FOR LG-G3
 ===========
 
 Getting Started
@@ -9,7 +9,7 @@ familiar with [Git and Repo](http://source.android.com/source/using-repo.html).
 
 To initialize your local repository using the AOSP-CAF trees, use a command like this:
 
-    repo init -u https://github.com/AOSP-CAF/platform_manifest.git -b mm6.0
+    repo init -u https://github.com/AOSP-G3/platform_manifest.git -b mm6.0
 
 Then to sync up:
 
@@ -21,7 +21,9 @@ Building the source
 The source at AOSP-CAF is well configured for building.
 
     $ . build/envsetup.sh
-    $ lunch aosp_device-userdebug
+    $ lunch aosp_DEVICE-userdebug
     $ make -jX otapackage
+
+where DEVICE is set the variant.
 
 where X is the number of jobs you would like to allot to the build system.

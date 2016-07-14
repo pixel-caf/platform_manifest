@@ -457,4 +457,20 @@
   <project name="platform/vendor/qcom-opensource/time-services" path="vendor/qcom/opensource/time-services"/>
 <!-- END CODEAURORA -->
 
+<!-- LG-G3 Specific -->
+  <project name="aosp-g3/android_device_lge_d855" path="device/lge/d855" remote="github" revision="aosp-mm" />
+  <project name="aosp-g3/android_device_lge_d852" path="device/lge/d852" remote="github" revision="aosp-mm" />
+  <project name="aosp-g3/android_device_lge_d851" path="device/lge/d851" remote="github" revision="aosp-mm" />
+  <project name="aosp-g3/android_device_lge_vs985" path="device/lge/vs985" remote="github" revision="aosp-mm" />
+  <project name="aosp-g3/android_device_lge_d850" path="device/lge/d850" remote="github" revision="aosp-mm" />
+  <project name="aosp-g3/android_device_lge_ls990" path="device/lge/ls990" remote="github" revision="aosp-mm" />
+  <project name="aosp-g3/android_device_lge_f400" path="device/lge/f400" remote="github" revision="aosp-mm" />
+  <project name="aosp-g3/android_device_lge_g3-common" path="device/lge/g3-common" remote="github" revision="aosp-mm" />
+  <project name="aosp-g3/android_kernel_lge_g3" path="kernel/lge/g3" remote="github" revision="aosp-mm" />
+  <project name="TheMuppets/proprietary_vendor_lge" path="vendor/lge" remote="github" revision="cm-13.0" />
+  <project name="CyanogenMod/android_hardware_qcom_audio" path="hardware/qcom/audio-caf/msm8974" remote="github" revision="cm-13.0-caf-8974" />
+  <project name="CyanogenMod/android_hardware_qcom_media" path="hardware/qcom/media-caf/msm8974" remote="github" revision="cm-13.0-caf-8974" />
+  <project name="CyanogenMod/android_hardware_qcom_display" path="hardware/qcom/display-caf/msm8974" remote="github" revision="cm-13.0-caf-8974" />
+<!-- LG-G3 Specific -->
+
 </manifest>
