@@ -349,7 +349,6 @@
   <project groups="pdk" name="platform/libnativehelper" path="libnativehelper"/>
   <project groups="pdk" name="platform/ndk" path="ndk"/>
   <project name="platform/packages/apps/BasicSmsReceiver" path="packages/apps/BasicSmsReceiver"/>
-  <project name="platform/packages/apps/CMFileManager" path="packages/apps/CMFileManager"/>
   <project name="platform/packages/apps/Calculator" path="packages/apps/Calculator"/>
   <project name="platform/packages/apps/Calendar" path="packages/apps/Calendar"/>
   <project name="platform/packages/apps/Camera" path="packages/apps/Camera"/>
@@ -368,7 +367,6 @@
   <project name="platform/packages/apps/HTMLViewer" path="packages/apps/HTMLViewer"/>
   <project name="platform/packages/apps/InCallUI" path="packages/apps/InCallUI"/>
   <project name="platform/packages/apps/KeyChain" path="packages/apps/KeyChain"/>
-  <project name="platform/packages/apps/Launcher2" path="packages/apps/Launcher2"/>
   <project name="platform/packages/apps/LegacyCamera" path="packages/apps/LegacyCamera"/>
   <project name="platform/packages/apps/ManagedProvisioning" path="packages/apps/ManagedProvisioning"/>
   <project name="platform/packages/apps/Messaging" path="packages/apps/Messaging"/>
@@ -389,7 +387,6 @@
   <project name="platform/packages/apps/Stk" path="packages/apps/Stk"/>
   <project name="platform/packages/apps/Tag" path="packages/apps/Tag"/>
   <project name="platform/packages/apps/Terminal" path="packages/apps/Terminal"/>
-  <project name="platform/packages/apps/Trebuchet" path="packages/apps/Trebuchet"/>
   <project name="platform/packages/apps/TvSettings" path="packages/apps/TvSettings"/>
   <project name="platform/packages/apps/UnifiedEmail" path="packages/apps/UnifiedEmail"/>
   <project name="platform/packages/experimental" path="packages/experimental"/>
@@ -423,13 +420,6 @@
   <project groups="pdk,linux" name="platform/prebuilts/clang/linux-x86/host/3.6" path="prebuilts/clang/linux-x86/host/3.6" clone-depth="1"/>
   <project name="platform/prebuilts/devtools" path="prebuilts/devtools" clone-depth="1"/>
   <project groups="pdk" name="platform/prebuilts/eclipse" path="prebuilts/eclipse" clone-depth="1"/>
-  <project groups="pdk,darwin,arm" name="platform/prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9" path="prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9" clone-depth="1"/>
-  <project groups="pdk,darwin,arm" name="platform/prebuilts/gcc/darwin-x86/arm/arm-eabi-4.8" path="prebuilts/gcc/darwin-x86/arm/arm-eabi-4.8" clone-depth="1"/>
-  <project groups="pdk,darwin,arm" name="platform/prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.9" path="prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.9" clone-depth="1"/>
-  <project groups="pdk,darwin" name="platform/prebuilts/gcc/darwin-x86/host/headers" path="prebuilts/gcc/darwin-x86/host/headers" clone-depth="1"/>
-  <project groups="pdk,darwin" name="platform/prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" path="prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" clone-depth="1"/>
-  <project groups="pdk,darwin,mips" name="platform/prebuilts/gcc/darwin-x86/mips/mips64el-linux-android-4.9" path="prebuilts/gcc/darwin-x86/mips/mips64el-linux-android-4.9" clone-depth="1"/>
-  <project groups="pdk,darwin,x86" name="platform/prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" path="prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" clone-depth="1"/>
   <project groups="pdk,linux,arm" name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" clone-depth="1"/>
   <project groups="pdk,linux" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" clone-depth="1"/>
   <project groups="pdk,linux" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" clone-depth="1"/>
