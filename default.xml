@@ -53,7 +53,6 @@
   <project name="platform_external_tinycompress" path="external/tinycompress" remote="aosp-caf" />
   <project name="platform_external_wpa_supplicant_8" path="external/wpa_supplicant_8" remote="aosp-caf" />
   <project name="platform_external_zlib" path="external/zlib" remote="aosp-caf" />
-  <project name="platform_frameworks_av" path="frameworks/av" remote="aosp-caf" />
   <project name="platform_frameworks_opt_telephony" path="frameworks/opt/telephony" remote="aosp-caf" />
   <project name="platform_hardware_libhardware_legacy" path="hardware/libhardware_legacy" remote="aosp-caf" />
   <project name="platform_hardware_qcom_keymaster" path="hardware/qcom/keymaster" remote="aosp-caf" />
@@ -75,6 +74,7 @@
 <!-- END AOSP-CAF -->
 
 <!-- BEGIN AOSP-G3 -->
+  <project name="aosp-g3/platform_frameworks_av" path="frameworks/av" remote="github" revision="aosp-mm" />
   <project name="aosp-g3/platform_frameworks_base" path="frameworks/base" remote="github" revision="aosp-mm" />
   <project name="aosp-g3/platform_frameworks_native" path="frameworks/native" remote="github" revision="aosp-mm" />
   <project name="aosp-g3/platform_hardware_libhardware" path="hardware/libhardware" remote="github" revision="aosp-mm" />
