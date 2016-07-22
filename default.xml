@@ -86,6 +86,7 @@
 <!-- END AOSP-G3 -->
 
 <!-- BEGIN CYANOGENMOD -->
+  <project name="android_external_chromium-webview" path="external/chromium-webview" clone-depth="1" remote="cm" />
   <project name="android_external_libncurses" path="external/libncurses" remote="cm" />
   <project name="android_hardware_qcom_audio" path="hardware/qcom/audio/default" remote="cm" />
   <project name="android_hardware_qcom_camera" path="hardware/qcom/camera" remote="cm" />
@@ -138,7 +139,6 @@
   <project groups="pdk-cw-fs" name="platform/external/ceres-solver" path="external/ceres-solver"/>
   <project name="platform/external/chromium-libpac" path="external/chromium-libpac"/>
   <project groups="pdk" name="platform/external/chromium-trace" path="external/chromium-trace"/>
-  <project groups="pdk" name="platform/external/chromium-webview" path="external/chromium-webview" clone-depth="1"/>
   <project groups="pdk" name="platform/external/clang" path="external/clang"/>
   <project name="platform/external/cmockery" path="external/cmockery"/>
   <project groups="pdk" name="platform/external/compiler-rt" path="external/compiler-rt"/>
