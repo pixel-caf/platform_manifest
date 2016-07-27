@@ -68,6 +68,7 @@
   <project name="platform_system_extras" path="system/extras" remote="aosp-caf" />
   <project name="platform_system_media" path="system/media" remote="aosp-caf" />
   <project name="platform_system_qcom" path="system/qcom" remote="aosp-caf" />
+  <project name="platform_vendor_aosp" path="vendor/aosp" remote="aosp-caf" />
   <project name="platform_vendor_qcom-opensource_dataservices" path="vendor/qcom/opensource/dataservices" remote="aosp-caf" />
   <project name="platform_vendor_qcom-opensource_dpm" path="vendor/qcom/opensource/dpm" remote="aosp-caf" />
   <project name="platform_vendor_qcom-opensource_fm" path="vendor/qcom/opensource/fm" remote="aosp-caf" />
@@ -82,7 +83,6 @@
   <project name="aosp-g3/platform_packages_apps_Settings" path="packages/apps/Settings" remote="github" revision="aosp-mm" />
   <project name="aosp-g3/android_packages_apps_Snap" path="packages/apps/Snap" remote="github" revision="aosp-mm" />
   <project name="aosp-g3/platform_system_vold" path="system/vold" remote="github" revision="aosp-mm" />
-  <project name="aosp-g3/platform_vendor_aosp" path="vendor/aosp" remote="github" revision="aosp-mm" />
 <!-- END AOSP-G3 -->
 
 <!-- BEGIN CYANOGENMOD -->
