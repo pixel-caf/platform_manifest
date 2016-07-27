@@ -100,7 +100,6 @@
   <project name="android_hardware_broadcom_wlan" path="hardware/broadcom/wlan" groups="pdk,broadcom_wlan" remote="cm" />
   <project name="android_hardware_broadcom_libbt" path="hardware/broadcom/libbt" groups="pdk" remote="cm" />
   <project name="android_packages_apps_Gallery2" path="packages/apps/Gallery2" remote="cm" />
-  <project name="android_system_bt" path="system/bt" groups="pdk" remote="cm" />
 <!-- END CYANOGENMOD -->
 
 <!-- BEGIN CODEAURORA -->
@@ -437,6 +436,7 @@
   <project groups="pdk" name="platform/prebuilts/sdk" path="prebuilts/sdk"/>
   <project groups="pdk,tools" name="platform/prebuilts/tools" path="prebuilts/tools" clone-depth="1"/>
   <project groups="pdk-cw-fs" name="platform/sdk" path="sdk" clone-depth="1"/>
+  <project groups="pdk" name="platform/system/bt" path="system/bt"/>
   <project groups="pdk" name="platform/system/gatekeeper" path="system/gatekeeper"/>
   <project groups="pdk" name="platform/system/keymaster" path="system/keymaster"/>
   <project groups="pdk" name="platform/system/netd" path="system/netd"/>
