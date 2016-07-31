@@ -9,6 +9,10 @@
   <remote  name="cm"
            fetch="https://github.com/CyanogenMod"
            revision="refs/heads/cm-13.0" />
+           
+  <remote  name="aosp-g3"
+           fetch="https://github.com/AOSP-G3"
+           revision="refs/heads/aosp-mm" />
 	
   <remote  name="aosp-caf"
            fetch="https://github.com/AOSP-CAF"
@@ -16,13 +20,23 @@
                    
   <remote  name="bitbucket"
            fetch="https://bitbucket.org/" />
-
-<!-- BEGIN AOSP-CAF -->
-  <project name="platform_manifest" path="manifest" remote="aosp-caf" />
-  <project name="aosp-g3/platform_build" path="build" remote="github" revision="aosp-mm" >
+           
+<!-- BEGIN AOSP-G3 -->
+  <project name="platform_build" path="build" remote="aosp-g3" >
   <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-  <project name="android_device_qcom_common" path="device/qcom/common" remote="cm" />
+  <project name="platform_frameworks_av" path="frameworks/av" remote="aosp-g3" />
+  <project name="platform_frameworks_base" path="frameworks/base" remote="aosp-g3" />
+  <project name="platform_frameworks_native" path="frameworks/native" remote="aosp-g3" />
+  <project name="platform_hardware_libhardware" path="hardware/libhardware" remote="aosp-g3" />
+  <project name="platform_packages_apps_SnapdragonLauncher" path="packages/apps/SnapdragonLauncher" remote="aosp-g3" />
+  <project name="platform_packages_apps_SnapdragonMusic" path="packages/apps/SnapdragonMusic" remote="aosp-g3" />
+  <project name="platform_packages_apps_Settings" path="packages/apps/Settings" remote="aosp-g3" />
+  <project name="platform_packages_apps_Snap" path="packages/apps/Snap" remote="aosp-g3" />
+  <project name="platform_system_vold" path="system/vold" remote="aosp-g3" />
+<!-- END AOSP-G3 -->
+
+<!-- BEGIN AOSP-CAF -->
   <project name="device_qcom_sepolicy" path="device/qcom/sepolicy" remote="aosp-caf" />
   <project name="platform_art" path="art" remote="aosp-caf" />
   <project name="platform_bionic" path="bionic" remote="aosp-caf" />
@@ -60,6 +74,7 @@
   <project name="platform_hardware_qcom_wlan" path="hardware/qcom/wlan-caf" revision="mm6.0-caf" remote="aosp-caf" />
   <project name="platform_hardware_ril" path="hardware/ril" remote="aosp-caf" />
   <project name="platform_hardware_ril" path="hardware/ril-caf" revision="mm6.0-caf" remote="aosp-caf" />
+  <project name="platform_manifest" path="manifest" remote="aosp-caf" />
   <project name="platform_packages_apps_Bluetooth" path="packages/apps/Bluetooth" remote="aosp-caf" />
   <project name="platform_packages_inputmethods_LatinIME" path="packages/inputmethods/LatinIME" remote="aosp-caf" />
   <project name="platform_packages_providers_MediaProvider" path="packages/providers/MediaProvider" remote="aosp-caf" />
@@ -74,18 +89,8 @@
   <project name="platform_vendor_qcom-opensource_fm" path="vendor/qcom/opensource/fm" remote="aosp-caf" />
 <!-- END AOSP-CAF -->
 
-<!-- BEGIN AOSP-G3 -->
-  <project name="aosp-g3/platform_frameworks_av" path="frameworks/av" remote="github" revision="aosp-mm" />
-  <project name="aosp-g3/platform_frameworks_base" path="frameworks/base" remote="github" revision="aosp-mm" />
-  <project name="aosp-g3/platform_frameworks_native" path="frameworks/native" remote="github" revision="aosp-mm" />
-  <project name="aosp-g3/platform_hardware_libhardware" path="hardware/libhardware" remote="github" revision="aosp-mm" />
-  <project name="aosp-g3/platform_packages_apps_Launcher3" path="packages/apps/Launcher3" remote="github" revision="aosp-mm" />
-  <project name="aosp-g3/platform_packages_apps_Settings" path="packages/apps/Settings" remote="github" revision="aosp-mm" />
-  <project name="aosp-g3/android_packages_apps_Snap" path="packages/apps/Snap" remote="github" revision="aosp-mm" />
-  <project name="aosp-g3/platform_system_vold" path="system/vold" remote="github" revision="aosp-mm" />
-<!-- END AOSP-G3 -->
-
 <!-- BEGIN CYANOGENMOD -->
+  <project name="android_device_qcom_common" path="device/qcom/common" remote="cm" />
   <project name="android_external_chromium-webview" path="external/chromium-webview" clone-depth="1" remote="cm" />
   <project name="android_external_libncurses" path="external/libncurses" remote="cm" />
   <project name="android_hardware_qcom_audio" path="hardware/qcom/audio/default" remote="cm" />
@@ -370,7 +375,6 @@
   <project name="platform/packages/apps/ManagedProvisioning" path="packages/apps/ManagedProvisioning"/>
   <project name="platform/packages/apps/Messaging" path="packages/apps/Messaging"/>
   <project name="platform/packages/apps/Mms" path="packages/apps/Mms"/>
-  <project name="platform/packages/apps/Music" path="packages/apps/Music"/>
   <project name="platform/packages/apps/MusicFX" path="packages/apps/MusicFX"/>
   <project name="platform/packages/apps/Nfc" path="packages/apps/Nfc"/>
   <project name="platform/packages/apps/OneTimeInitializer" path="packages/apps/OneTimeInitializer"/>
@@ -453,15 +457,15 @@
 <!-- END CODEAURORA -->
 
 <!-- LG-G3 Specific -->
-  <project name="aosp-g3/android_device_lge_d855" path="device/lge/d855" remote="github" revision="aosp-mm" />
-  <project name="aosp-g3/android_device_lge_d852" path="device/lge/d852" remote="github" revision="aosp-mm" />
-  <project name="aosp-g3/android_device_lge_d851" path="device/lge/d851" remote="github" revision="aosp-mm" />
-  <project name="aosp-g3/android_device_lge_vs985" path="device/lge/vs985" remote="github" revision="aosp-mm" />
-  <project name="aosp-g3/android_device_lge_d850" path="device/lge/d850" remote="github" revision="aosp-mm" />
-  <project name="aosp-g3/android_device_lge_ls990" path="device/lge/ls990" remote="github" revision="aosp-mm" />
-  <project name="aosp-g3/android_device_lge_f400" path="device/lge/f400" remote="github" revision="aosp-mm" />
-  <project name="aosp-g3/android_device_lge_g3-common" path="device/lge/g3-common" remote="github" revision="aosp-mm" />
-  <project name="aosp-g3/android_kernel_lge_g3" path="kernel/lge/g3" remote="github" revision="aosp-mm" />
+  <project name="android_device_lge_d855" path="device/lge/d855" remote="aosp-g3" />
+  <project name="android_device_lge_d852" path="device/lge/d852" remote="aosp-g3" />
+  <project name="android_device_lge_d851" path="device/lge/d851" remote="aosp-g3" />
+  <project name="android_device_lge_vs985" path="device/lge/vs985" remote="aosp-g3" />
+  <project name="android_device_lge_d850" path="device/lge/d850" remote="aosp-g3" />
+  <project name="android_device_lge_ls990" path="device/lge/ls990" remote="aosp-g3" />
+  <project name="android_device_lge_f400" path="device/lge/f400" remote="aosp-g3" />
+  <project name="android_device_lge_g3-common" path="device/lge/g3-common" remote="aosp-g3" />
+  <project name="android_kernel_lge_g3" path="kernel/lge/g3" remote="aosp-g3" />
   <project name="TheMuppets/proprietary_vendor_lge" path="vendor/lge" remote="github" revision="cm-13.0" />
   <project name="CyanogenMod/android_hardware_qcom_audio" path="hardware/qcom/audio-caf/msm8974" remote="github" revision="cm-13.0-caf-8974" />
   <project name="CyanogenMod/android_hardware_qcom_media" path="hardware/qcom/media-caf/msm8974" remote="github" revision="cm-13.0-caf-8974" />
