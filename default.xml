@@ -466,7 +466,7 @@
   <project name="android_device_lge_f400" path="device/lge/f400" remote="aosp-g3" />
   <project name="android_device_lge_g3-common" path="device/lge/g3-common" remote="aosp-g3" />
   <project name="android_kernel_lge_g3" path="kernel/lge/g3" remote="aosp-g3" />
-  <project name="TheMuppets/proprietary_vendor_lge" path="vendor/lge" remote="github" revision="cm-13.0" />
+  <project name="proprietary_vendor_lge" path="vendor/lge" remote="aosp-g3" />
   <project name="CyanogenMod/android_hardware_qcom_audio" path="hardware/qcom/audio-caf/msm8974" remote="github" revision="cm-13.0-caf-8974" />
   <project name="CyanogenMod/android_hardware_qcom_media" path="hardware/qcom/media-caf/msm8974" remote="github" revision="cm-13.0-caf-8974" />
   <project name="CyanogenMod/android_hardware_qcom_display" path="hardware/qcom/display-caf/msm8974" remote="github" revision="cm-13.0-caf-8974" />
