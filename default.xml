@@ -34,9 +34,10 @@
   <project path="hardware/libhardware" name="platform_hardware_libhardware" remote="CAF-G3" />
   <project path="manifest" name="platform_manifest" remote="CAF-G3" />
   <project path="packages/apps/Bluetooth" name="platform_packages_apps_Bluetooth" remote="CAF-G3" />
-  <project path="packages/apps/Dialer" name="platform/packages/apps/Dialer" remote="CAF-G3" />
+  <project path="packages/apps/Dialer" name="platform_packages_apps_Dialer" remote="CAF-G3" />
   <project path="packages/apps/Launcher3" name="platform_packages_apps_Launcher3" remote="CAF-G3" />
   <project path="packages/apps/Settings" name="platform_packages_apps_Settings" remote="CAF-G3" />
+  <project path="packages/apps/SnapdragonCamera" name="platform_packages_apps_SnapdragonCamera" remote="CAF-G3" />
   <project path="packages/apps/SnapdragonMusic" name="platform_packages_apps_SnapdragonMusic" remote="CAF-G3" />
   <project path="packages/inputmethods/LatinIME" name="platform_packages_inputmethods_LatinIME" remote="CAF-G3" />
   <project path="packages/providers/MediaProvider" name="platform_packages_providers_MediaProvider" remote="CAF-G3" />
@@ -429,7 +430,6 @@
   <project name="platform/packages/apps/Protips" path="packages/apps/Protips" groups="pdk-fs" />
   <project name="platform/packages/apps/Provision" path="packages/apps/Provision" groups="pdk-fs" />
   <project name="platform/packages/apps/QuickSearchBox" path="packages/apps/QuickSearchBox" groups="pdk-fs" />
-  <project name="platform/packages/apps/SnapdragonCamera" path="packages/apps/SnapdragonCamera" />
   <project name="platform/packages/apps/SafetyRegulatoryInfo" path="packages/apps/SafetyRegulatoryInfo" groups="pdk-fs" />
   <project name="platform/packages/apps/SmartCardService" path="packages/apps/SmartCardService"  groups="pdk-fs" />
   <project name="platform/packages/apps/SpareParts" path="packages/apps/SpareParts" groups="pdk-fs" />
