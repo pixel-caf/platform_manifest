@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote  fetch="https://source.codeaurora.org/quic/la" name="caf" review="codeaurora.org" />
-  <default remote="caf" revision="refs/tags/LA.UM.5.6.r1-03400-89xx.0"/>
+  <default remote="caf" revision="refs/tags/LA.UM.5.5.r1-02800-8x96.0"/>
 
   <remote  name="github"
            fetch="https://github.com" />
@@ -24,6 +24,7 @@
   <project path="device/qcom/common" name="device_qcom_common" remote="CAF-G3" />
   <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="CAF-G3" />
   <project path="external/bash" name="platform_external_bash" remote="CAF-G3" />
+  <project path="external/e2fsprogs" name="platform_external_e2fsprogs" remote="CAF-G3" />
   <project path="external/busybox" name="platform_external_busybox" remote="CAF-G3" />
   <project path="external/fsck_msdos" name="platform_external_fsck_msdos" remote="CAF-G3" />
   <project path="frameworks/av" name="platform_frameworks_av" remote="CAF-G3" />
@@ -35,7 +36,6 @@
   <project path="packages/apps/Bluetooth" name="platform_packages_apps_Bluetooth" remote="CAF-G3" />
   <project path="packages/apps/Launcher3" name="platform_packages_apps_Launcher3" remote="CAF-G3" />
   <project path="packages/apps/Settings" name="platform_packages_apps_Settings" remote="CAF-G3" />
-  <project path="packages/apps/Snap" name="platform_packages_apps_Snap" remote="CAF-G3" />
   <project path="packages/apps/SnapdragonMusic" name="platform_packages_apps_SnapdragonMusic" remote="CAF-G3" />
   <project path="packages/inputmethods/LatinIME" name="platform_packages_inputmethods_LatinIME" remote="CAF-G3" />
   <project path="packages/providers/MediaProvider" name="platform_packages_providers_MediaProvider" remote="CAF-G3" />
@@ -61,12 +61,11 @@
   <project name="android_external_bson" path="external/bson" remote="laos" />
   <project name="android_external_connectivity" path="external/connectivity" remote="laos" />
   <project name="android_external_exfat" path="external/exfat" remote="laos" />
-  <project name="android_external_e2fsprogs" path="external/e2fsprogs" remote="laos" />
   <project name="android_external_f2fs-tools" path="external/f2fs-tools" remote="laos" />
   <project name="android_external_fuse" path="external/fuse" remote="laos" />
   <project name="android_external_mksh" path="external/mksh" remote="laos" />
   <project name="android_external_ntfs-3g" path="external/ntfs-3g" remote="laos" />
-  <project name="android_external_okhttp" path="external/okhttp" remote="laos" />
+  <project name="android_external_okhttp" path="external/okhttp" groups="pdk" remote="laos" />
   <project name="android_external_skia" path="external/skia" remote="laos" />
   <project name="android_external_libncurses" path="external/libncurses" remote="laos" />
   <project name="android_external_libnfc-nci" path="external/libnfc-nci" remote="laos" />
@@ -92,10 +91,13 @@
   <project name="android_hardware_qcom_wlan" path="hardware/qcom/wlan-caf" revision="cm-14.1-caf" remote="laos" />
   <project name="android_hardware_ril" path="hardware/ril" remote="laos" />
   <project name="android_hardware_ril" path="hardware/ril-caf" revision="cm-14.1-caf" remote="laos" />
-  <project name="android_packages_apps_Browser" path="packages/apps/Browser" remote="laos" />
   <project name="android_packages_apps_FMRadio" path="packages/apps/FMRadio" remote="laos" />
   <project name="android_packages_apps_Gallery2" path="packages/apps/Gallery2" remote="laos" />
   <project name="android_packages_apps_SoundRecorder" path="packages/apps/SoundRecorder" remote="laos" />
+  <project name="android_vendor_qcom_opensource_bluetooth" path="vendor/qcom/opensource/bluetooth" remote="laos" />
+  <project name="android_vendor_qcom_opensource_dataservices" path="vendor/qcom/opensource/dataservices" remote="laos" />
+  <project name="android_vendor_qcom_opensource_dpm" path="vendor/qcom/opensource/dpm" remote="laos" />
+  <project name="android_vendor_qcom_opensource_time-services" path="vendor/qcom/opensource/time-services" remote="laos" />
 <!-- LINEAGE-OS -->
 
 <!-- BEGIN CODEAURORA -->
@@ -399,9 +401,13 @@
   <project name="platform/packages/apps/Calculator" path="packages/apps/Calculator" groups="pdk-fs" />
   <project name="platform/packages/apps/Calendar" path="packages/apps/Calendar" groups="pdk-fs" />
   <project name="platform/packages/apps/Camera" path="packages/apps/Camera" groups="pdk-fs" />
+  <project name="platform/packages/apps/Camera2" path="packages/apps/Camera2" groups="pdk-fs" />
+  <project name="platform/packages/apps/Contacts" path="packages/apps/Contacts" groups="pdk-fs" />
+  <project name="platform/packages/apps/ContactsCommon" path="packages/apps/ContactsCommon" groups="pdk-fs" />
   <project name="platform/packages/apps/CarrierConfig" path="packages/apps/CarrierConfig" groups="pdk-cw-fs,pdk-fs" />
   <project name="platform/packages/apps/CellBroadcastReceiver" path="packages/apps/CellBroadcastReceiver" groups="pdk-cw-fs,pdk-fs" />
   <project name="platform/packages/apps/CertInstaller" path="packages/apps/CertInstaller" />
+  <project name="platform/packages/apps/Dialer" path="packages/apps/Dialer" />
   <project name="platform/packages/apps/DeskClock" path="packages/apps/DeskClock" groups="pdk-fs" />
   <project name="platform/packages/apps/DevCamera" path="packages/apps/DevCamera" groups="pdk-fs" />
   <project name="platform/packages/apps/Email" path="packages/apps/Email" groups="pdk-fs" />
@@ -410,6 +416,7 @@
   <project name="platform/packages/apps/Gallery" path="packages/apps/Gallery" groups="pdk-fs" />
   <project name="platform/packages/apps/HTMLViewer" path="packages/apps/HTMLViewer" groups="pdk-fs" />
   <project name="platform/packages/apps/KeyChain" path="packages/apps/KeyChain" groups="pdk-fs" />
+  <project name="platform/packages/apps/Launcher2" path="packages/apps/Launcher2" groups="pdk-fs" />
   <project name="platform/packages/apps/LegacyCamera" path="packages/apps/LegacyCamera" groups="pdk-fs" />
   <project name="platform/packages/apps/ManagedProvisioning" path="packages/apps/ManagedProvisioning" groups="pdk-fs" />
   <project name="platform/packages/apps/Messaging" path="packages/apps/Messaging" groups="pdk-fs" />
@@ -418,11 +425,11 @@
   <project name="platform/packages/apps/Nfc" path="packages/apps/Nfc" groups="apps_nfc,pdk-fs" />
   <project name="platform/packages/apps/OneTimeInitializer" path="packages/apps/OneTimeInitializer" groups="pdk-fs" />
   <project name="platform/packages/apps/PackageInstaller" path="packages/apps/PackageInstaller" groups="pdk-cw-fs,pdk-fs" />
-  <project name="platform/packages/apps/Phone" path="packages/apps/Phone" groups="pdk-fs" />
   <project name="platform/packages/apps/PhoneCommon" path="packages/apps/PhoneCommon" groups="pdk-cw-fs,pdk-fs" />
   <project name="platform/packages/apps/Protips" path="packages/apps/Protips" groups="pdk-fs" />
   <project name="platform/packages/apps/Provision" path="packages/apps/Provision" groups="pdk-fs" />
   <project name="platform/packages/apps/QuickSearchBox" path="packages/apps/QuickSearchBox" groups="pdk-fs" />
+  <project name="platform/packages/apps/SnapdragonCamera" path="packages/apps/SnapdragonCamera" />
   <project name="platform/packages/apps/SafetyRegulatoryInfo" path="packages/apps/SafetyRegulatoryInfo" groups="pdk-fs" />
   <project name="platform/packages/apps/SmartCardService" path="packages/apps/SmartCardService"  groups="pdk-fs" />
   <project name="platform/packages/apps/SpareParts" path="packages/apps/SpareParts" groups="pdk-fs" />
@@ -503,22 +510,15 @@
   <project name="platform/tools/external/fat32lib" path="tools/external/fat32lib" groups="tools" />
   <project name="platform/tools/external/gradle" path="tools/external/gradle" groups="tools" />
   <project name="platform/tools/test/connectivity" path="tools/test/connectivity" />
-  <project name="platform/vendor/codeaurora/telephony" path="vendor/codeaurora/telephony" revision="58b6e2f721d3479b738178a59351cb46c568a07f" upstream="atel.lnx.2.0.r5-rel" />
-  <project name="platform/vendor/nxp/opensource/external/libnfc-nci" path="vendor/nxp/opensource/external/libnfc-nci" revision="9895ee467427b8bb1e0f36b66d7569bcec8c20f5" upstream="nfc.lnx.2.0.r5-rel" />
-  <project name="platform/vendor/nxp/opensource/frameworks" path="vendor/nxp/opensource/frameworks" revision="72a393e248b0dd31a2c473a3b914420e7e492b77" upstream="nfc.lnx.2.0.r5-rel" />
-  <project name="platform/vendor/nxp/opensource/packages/apps/Nfc" path="vendor/nxp/opensource/packages/apps/Nfc" revision="6b8bcaf7424b968a23066fea9223c80595f612fe" upstream="nfc.lnx.2.0.r5-rel" />
-  <project groups="qcom" name="platform/vendor/qcom-opensource/bluetooth" path="vendor/qcom/opensource/bluetooth" revision="7e2a4bf38c129605da869294c63a2f6f1e81f152" upstream="bt-qc.lnx.1.0.r5-rel" />
-  <project name="platform/vendor/qcom-opensource/data-ipa-cfg-mgr" path="vendor/qcom/opensource/data-ipa-cfg-mgr" revision="b67fbfee69afc44174a3ad1312d662ec24732be3" upstream="data.lnx.2.0.r5-rel" />
-  <project name="platform/vendor/qcom-opensource/dataservices" path="vendor/qcom/opensource/dataservices" revision="0d75acd8725abfb17c3bbe22aa94deadc6e5f2dc" upstream="data.lnx.2.0.r5-rel" />
-  <project name="platform/vendor/qcom-opensource/dpm" path="vendor/qcom/opensource/dpm" revision="e17a0e7f08d03ee49769f810a032bafaaf5311b3" upstream="data.lnx.2.0.r5-rel" />
-  <project name="platform/vendor/qcom-opensource/fst-manager" path="vendor/qcom/opensource/fst-manager" revision="c8488577421e81aa8fec4ed2f28b2fd9b0bb243c" upstream="wigig.lnx.1.0.r5-rel" />
-  <project name="platform/vendor/qcom-opensource/kernel/kernel-tests" path="vendor/qcom/opensource/kernel-tests" revision="68e46ca20544d49e4d20f212508d0cbf19dbd747" upstream="kernel-tests.lnx.1.0.r5-rel" />
-  <project name="platform/vendor/qcom-opensource/location" path="vendor/qcom/opensource/location" revision="81eda83a1f3a7c33daec7744f2c6bcdf51f06493" upstream="location.lnx.2.0.r5-rel" />
-  <project name="platform/vendor/qcom-opensource/mmc-utils" path="vendor/qcom/opensource/mmc-utils" revision="053754b3d2550699c3a70eedbe655268cfeeae6c" upstream="core-technologies.lnx.1.0.r5-rel" />
-  <project name="platform/vendor/qcom-opensource/rcs-service" path="vendor/qcom/opensource/rcs-service" revision="5dccbab946b999207ff3ceb3ac5f3afea6669775" upstream="android_ui.lnx.2.1.r5-rel" />
-  <project name="platform/vendor/qcom-opensource/shortcut-fe" path="shortcut-fe" revision="214ece874ced71fcbeb2fbc0a218b0824be60c34" upstream="data.lnx.2.0.r5-rel" />
-  <project name="platform/vendor/qcom-opensource/time-services" path="vendor/qcom/opensource/time-services" revision="dfab2a8b0418966421160512bfb18ec57b20159f" upstream="core-technologies.lnx.1.0.r5-rel" />
-  <project name="platform/vendor/qcom-opensource/tools" path="vendor/qcom/opensource/tools" revision="621f112de4c7583b60bebfc71986746d69bf33d6" upstream="opensource-tools.lnx.1.0.r5-rel" />
+  <project name="platform/vendor/codeaurora/telephony" path="vendor/codeaurora/telephony" />
+  <project name="platform/vendor/qcom-opensource/fst-manager" path="vendor/qcom/opensource/fst-manager" />
+  <project name="platform/vendor/qcom-opensource/mmc-utils" path="vendor/qcom/opensource/mmc-utils" />
+  <project name="platform/vendor/qcom-opensource/rcs-service" path="vendor/qcom/opensource/rcs-service" />
+  <project name="platform/vendor/qcom-opensource/shortcut-fe" path="shortcut-fe" />
+  <project name="platform/vendor/qcom-opensource/tools" path="vendor/qcom/opensource/tools" />
 <!-- END CODEAURORA -->
+	
+ <!-- Masquerade -->
++  <project path="packages/apps/masquerade" name="Substratum/masquerade" remote="github" revision="n" />
 
 </manifest>
