@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote  fetch="https://source.codeaurora.org/quic/la" name="caf" review="codeaurora.org" />
-  <default remote="caf" revision="refs/tags/LA.UM.5.5.r1-02800-8x96.0"/>
+  <default remote="caf" revision="refs/tags/LA.UM.5.5.r1-03600-8x96.0"/>
 
   <remote  name="github"
            fetch="https://github.com" />
