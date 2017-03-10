@@ -21,26 +21,33 @@
   <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="build/kati" name="platform_build_kati" remote="CAF-G3" groups="pdk,tradefed" />
-  <project path="device/qcom/common" name="device_qcom_common" remote="CAF-G3" />
   <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="CAF-G3" />
   <project path="external/bash" name="platform_external_bash" remote="CAF-G3" />
   <project path="external/e2fsprogs" name="platform_external_e2fsprogs" remote="CAF-G3" />
   <project path="external/busybox" name="platform_external_busybox" remote="CAF-G3" />
+  <project path="external/jemalloc" name="platform_external_jemalloc" remote="CAF-G3" />
   <project path="external/fsck_msdos" name="platform_external_fsck_msdos" remote="CAF-G3" />
+  <project path="external/sqlite" name="platform_external_sqlite" remote="CAF-G3" />
   <project path="frameworks/av" name="platform_frameworks_av" remote="CAF-G3" />
   <project path="frameworks/base" name="platform_frameworks_base" remote="CAF-G3" />
   <project path="frameworks/native" name="platform_frameworks_native" remote="CAF-G3" />
+  <project path="frameworks/opt/net/wifi" name="platform_frameworks_opt_net_wifi" remote="CAF-G3" />
   <project path="frameworks/opt/telephony" name="platform_frameworks_opt_telephony" remote="CAF-G3" />
   <project path="hardware/libhardware" name="platform_hardware_libhardware" remote="CAF-G3" />
   <project path="manifest" name="platform_manifest" remote="CAF-G3" />
   <project path="packages/apps/Bluetooth" name="platform_packages_apps_Bluetooth" remote="CAF-G3" />
+  <project path="packages/apps/Contacts" name="platform_packages_apps_Contacts" remote="CAF-G3" />
+  <project path="packages/apps/ContactsCommon" name="platform_packages_apps_ContactsCommon" remote="CAF-G3" />
   <project path="packages/apps/Dialer" name="platform_packages_apps_Dialer" remote="CAF-G3" />
   <project path="packages/apps/Launcher3" name="platform_packages_apps_Launcher3" remote="CAF-G3" />
+  <project path="packages/apps/PackageInstaller" name="platform_packages_apps_PackageInstaller" remote="CAF-G3" />
+  <project path="packages/apps/PhoneCommon" name="platform_packages_apps_PhoneCommon" remote="CAF-G3" />
   <project path="packages/apps/Settings" name="platform_packages_apps_Settings" remote="CAF-G3" />
   <project path="packages/apps/SnapdragonCamera" name="platform_packages_apps_SnapdragonCamera" remote="CAF-G3" />
   <project path="packages/apps/SnapdragonMusic" name="platform_packages_apps_SnapdragonMusic" remote="CAF-G3" />
   <project path="packages/inputmethods/LatinIME" name="platform_packages_inputmethods_LatinIME" remote="CAF-G3" />
   <project path="packages/providers/MediaProvider" name="platform_packages_providers_MediaProvider" remote="CAF-G3" />
+  <project path="packages/services/Telecomm" name="platform_packages_services_Telecomm" remote="CAF-G3" />
   <project path="packages/services/Telephony" name="platform_packages_services_Telephony" remote="CAF-G3" />
   <project path="system/bt" name="platform_system_bt" remote="CAF-G3" />
   <project path="system/core" name="platform_system_core" remote="CAF-G3" />
@@ -53,13 +60,21 @@
 <!-- END CAF-G3 -->
 	
 <!-- G3-Specific -->
+  <project path="device/lge/d850" name="device_lge_d850" remote="CAF-G3" />
+  <project path="device/lge/d851" name="device_lge_d851" remote="CAF-G3" />
+  <project path="device/lge/d852" name="device_lge_d852" remote="CAF-G3" />
   <project path="device/lge/d855" name="device_lge_d855" remote="CAF-G3" />
+  <project path="device/lge/f400" name="device_lge_f400" remote="CAF-G3" />
+  <project path="device/lge/g3ds" name="device_lge_g3ds" remote="CAF-G3" />
+  <project path="device/lge/ls990" name="device_lge_ls990" remote="CAF-G3" />
+  <project path="device/lge/vs985" name="device_lge_vs985" remote="CAF-G3" />
   <project path="device/lge/g3-common" name="device_lge_g3-common" remote="CAF-G3" />
   <project path="kernel/lge/g3" name="kernel_lge_g3" remote="CAF-G3" />
-  <project path="vendor/lge" name="TheMuppets/proprietary_vendor_lge" remote="github" revision="cm-14.1" />
+  <project path="vendor/lge" name="vendor_lge" remote="CAF-G3" />
 <!-- END G3-Specific -->
 
 <!-- LINEAGEOS -->
+  <project name="android_device_qcom_common" path="device/qcom/common" remote="laos" />
   <project name="android_external_bson" path="external/bson" remote="laos" />
   <project name="android_external_connectivity" path="external/connectivity" remote="laos" />
   <project name="android_external_exfat" path="external/exfat" remote="laos" />
@@ -77,6 +92,8 @@
   <project name="android_external_tinycompress" path="external/tinycompress" remote="laos" />
   <project name="android_external_zlib" path="external/zlib" remote="laos" />
   <project name="android_external_wpa_supplicant_8" path="external/wpa_supplicant_8" remote="laos" />
+  <project name="android_hardware_broadcom_libbt" path="hardware/broadcom/libbt" groups="pdk" remote="laos" />
+  <project name="android_hardware_broadcom_wlan" path="hardware/broadcom/wlan" groups="pdk,broadcom_wlan" remote="laos" />
   <project name="android_hardware_qcom_audio" path="hardware/qcom/audio-caf/msm8974" remote="laos" revision="cm-14.1-caf-8974" />
   <project name="android_hardware_qcom_audio" path="hardware/qcom/audio/default" remote="laos" />
   <project name="android_hardware_qcom_bt" path="hardware/qcom/bt" remote="laos" />
@@ -97,6 +114,7 @@
   <project name="android_packages_apps_Gallery2" path="packages/apps/Gallery2" remote="laos" />
   <project name="android_packages_apps_SoundRecorder" path="packages/apps/SoundRecorder" remote="laos" />
   <project name="android_vendor_qcom_opensource_bluetooth" path="vendor/qcom/opensource/bluetooth" remote="laos" />
+  <project name="android_vendor_qcom_opensource_cryptfs_hw" path="vendor/qcom/opensource/cryptfs_hw" remote="laos" />
   <project name="android_vendor_qcom_opensource_dataservices" path="vendor/qcom/opensource/dataservices" remote="laos" />
   <project name="android_vendor_qcom_opensource_dpm" path="vendor/qcom/opensource/dpm" remote="laos" />
   <project name="android_vendor_qcom_opensource_time-services" path="vendor/qcom/opensource/time-services" remote="laos" />
@@ -214,7 +232,6 @@
   <project name="platform/external/javassist" path="external/javassist" groups="pdk" />
   <project name="platform/external/jcommander" path="external/jcommander" groups="pdk" />
   <project name="platform/external/jdiff" path="external/jdiff" groups="pdk" />
-  <project name="platform/external/jemalloc" path="external/jemalloc" groups="pdk" />
   <project name="platform/external/jetty" path="external/jetty" groups="pdk" />
   <project name="platform/external/jhead" path="external/jhead" groups="pdk" />
   <project name="platform/external/jmdns" path="external/jmdns" groups="pdk" />
@@ -329,7 +346,6 @@
   <project name="platform/external/sonic" path="external/sonic" groups="pdk" />
   <project name="platform/external/sonivox" path="external/sonivox" groups="pdk" />
   <project name="platform/external/speex" path="external/speex" groups="pdk" />
-  <project name="platform/external/sqlite" path="external/sqlite" groups="pdk" />
   <project name="platform/external/squashfs-tools" path="external/squashfs-tools" groups="pdk" />
   <project name="platform/external/srtp" path="external/srtp" groups="pdk" />
   <project name="platform/external/strace" path="external/strace" groups="pdk" />
@@ -390,8 +406,6 @@
   <project name="platform/frameworks/webview" path="frameworks/webview" groups="pdk-cw-fs,pdk-fs" />
   <project name="platform/frameworks/wilhelm" path="frameworks/wilhelm" groups="pdk-cw-fs,pdk-fs" />
   <project name="platform/hardware/akm" path="hardware/akm" groups="pdk-cw-fs,pdk-fs" />
-  <project name="platform/hardware/broadcom/libbt" path="hardware/broadcom/libbt" groups="pdk" />
-  <project name="platform/hardware/broadcom/wlan" path="hardware/broadcom/wlan" groups="pdk,broadcom_wlan" />
   <project name="platform/hardware/google/apf" path="hardware/google/apf" groups="pdk" />
   <project name="platform/hardware/invensense" path="hardware/invensense" groups="nvensense,pdk" />
   <project name="platform/hardware/libhardware_legacy" path="hardware/libhardware_legacy" groups="pdk" />
@@ -404,8 +418,6 @@
   <project name="platform/packages/apps/Calendar" path="packages/apps/Calendar" groups="pdk-fs" />
   <project name="platform/packages/apps/Camera" path="packages/apps/Camera" groups="pdk-fs" />
   <project name="platform/packages/apps/Camera2" path="packages/apps/Camera2" groups="pdk-fs" />
-  <project name="platform/packages/apps/Contacts" path="packages/apps/Contacts" groups="pdk-fs" />
-  <project name="platform/packages/apps/ContactsCommon" path="packages/apps/ContactsCommon" groups="pdk-fs" />
   <project name="platform/packages/apps/CarrierConfig" path="packages/apps/CarrierConfig" groups="pdk-cw-fs,pdk-fs" />
   <project name="platform/packages/apps/CellBroadcastReceiver" path="packages/apps/CellBroadcastReceiver" groups="pdk-cw-fs,pdk-fs" />
   <project name="platform/packages/apps/CertInstaller" path="packages/apps/CertInstaller" />
@@ -425,8 +437,6 @@
   <project name="platform/packages/apps/MusicFX" path="packages/apps/MusicFX" groups="pdk-fs" />
   <project name="platform/packages/apps/Nfc" path="packages/apps/Nfc" groups="apps_nfc,pdk-fs" />
   <project name="platform/packages/apps/OneTimeInitializer" path="packages/apps/OneTimeInitializer" groups="pdk-fs" />
-  <project name="platform/packages/apps/PackageInstaller" path="packages/apps/PackageInstaller" groups="pdk-cw-fs,pdk-fs" />
-  <project name="platform/packages/apps/PhoneCommon" path="packages/apps/PhoneCommon" groups="pdk-cw-fs,pdk-fs" />
   <project name="platform/packages/apps/Protips" path="packages/apps/Protips" groups="pdk-fs" />
   <project name="platform/packages/apps/Provision" path="packages/apps/Provision" groups="pdk-fs" />
   <project name="platform/packages/apps/QuickSearchBox" path="packages/apps/QuickSearchBox" groups="pdk-fs" />
@@ -461,7 +471,6 @@
   <project name="platform/packages/screensavers/WebView" path="packages/screensavers/WebView" groups="pdk-fs" />
   <project name="platform/packages/services/Car" path="packages/services/Car" groups="adp8064,pdk-cw-fs,pdk-fs" />
   <project name="platform/packages/services/Mms" path="packages/services/Mms" groups="pdk-cw-fs,pdk-fs" />
-  <project name="platform/packages/services/Telecomm" path="packages/services/Telecomm" groups="pdk-cw-fs,pdk-fs" />
   <project name="platform/packages/wallpapers/LivePicker" path="packages/wallpapers/LivePicker" groups="pdk-fs" />
   <project name="platform/pdk" path="pdk" groups="pdk" />
   <project name="platform/platform_testing" path="platform_testing" groups="pdk-fs,pdk-cw-fs,cts" />
@@ -519,6 +528,6 @@
 <!-- END CODEAURORA -->
 	
  <!-- Masquerade -->
-+  <project path="packages/apps/masquerade" name="Substratum/masquerade" remote="github" revision="n" />
+  <project path="packages/apps/ThemeInterfacer" name="substratum/interfacer" remote="github" revision="n-rootless" />
 
 </manifest>
