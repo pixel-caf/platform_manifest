@@ -1,4 +1,4 @@
-CAF FOR LG-G3
+Android-CAF for Snapdragon Devices
 ===========
 
 Getting Started
@@ -7,9 +7,9 @@ Getting Started
 To get started with Android, you'll need to get
 familiar with [Git and Repo](http://source.android.com/source/using-repo.html).
 
-To initialize your local repository using the CAF-G3 trees, use a command like this:
+To initialize your local repository using the android-caf trees, use a command like this:
 
-    repo init -u https://github.com/CAF-G3/platform_manifest.git -b n-mr1
+    repo init -u https://github.com/android-caf/platform_manifest.git -b n-mr1
 
 Then to sync up:
 

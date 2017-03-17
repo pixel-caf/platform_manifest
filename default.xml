@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote  fetch="https://source.codeaurora.org/quic/la" name="caf" review="codeaurora.org" />
-  <default remote="caf" revision="refs/tags/LA.UM.5.5.r1-03600-8x96.0"/>
+  <default remote="caf" revision="refs/tags/LA.UM.5.6.r1-03800-89xx.0"/>
 
   <remote  name="github"
            fetch="https://github.com" />
@@ -10,71 +10,76 @@
            fetch="https://github.com/LineageOS"
            revision="refs/heads/cm-14.1" />
 	
-  <remote  name="CAF-G3"
-           fetch="https://github.com/CAF-G3" 
+  <remote  name="android-caf"
+           fetch="https://github.com/android-caf" 
            revision="n-mr1" /> 
 	
-<!-- BEGIN CAF-G3 -->
-  <project path="art" name="platform_art" remote="CAF-G3" />
-  <project path="bionic" name="platform_bionic" remote="CAF-G3" />
-  <project path="build" name="platform_build" remote="CAF-G3" >
+<!-- BEGIN android-caf -->
+  <project path="art" name="platform_art" remote="android-caf" />
+  <project path="bionic" name="platform_bionic" remote="android-caf" />
+  <project path="build" name="platform_build" remote="android-caf" >
   <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-  <project path="build/kati" name="platform_build_kati" remote="CAF-G3" groups="pdk,tradefed" />
-  <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="CAF-G3" />
-  <project path="external/bash" name="platform_external_bash" remote="CAF-G3" />
-  <project path="external/e2fsprogs" name="platform_external_e2fsprogs" remote="CAF-G3" />
-  <project path="external/busybox" name="platform_external_busybox" remote="CAF-G3" />
-  <project path="external/jemalloc" name="platform_external_jemalloc" remote="CAF-G3" />
-  <project path="external/fsck_msdos" name="platform_external_fsck_msdos" remote="CAF-G3" />
-  <project path="external/sqlite" name="platform_external_sqlite" remote="CAF-G3" />
-  <project path="frameworks/av" name="platform_frameworks_av" remote="CAF-G3" />
-  <project path="frameworks/base" name="platform_frameworks_base" remote="CAF-G3" />
-  <project path="frameworks/native" name="platform_frameworks_native" remote="CAF-G3" />
-  <project path="frameworks/opt/net/wifi" name="platform_frameworks_opt_net_wifi" remote="CAF-G3" />
-  <project path="frameworks/opt/telephony" name="platform_frameworks_opt_telephony" remote="CAF-G3" />
-  <project path="hardware/libhardware" name="platform_hardware_libhardware" remote="CAF-G3" />
-  <project path="manifest" name="platform_manifest" remote="CAF-G3" />
-  <project path="packages/apps/Bluetooth" name="platform_packages_apps_Bluetooth" remote="CAF-G3" />
-  <project path="packages/apps/Contacts" name="platform_packages_apps_Contacts" remote="CAF-G3" />
-  <project path="packages/apps/ContactsCommon" name="platform_packages_apps_ContactsCommon" remote="CAF-G3" />
-  <project path="packages/apps/Dialer" name="platform_packages_apps_Dialer" remote="CAF-G3" />
-  <project path="packages/apps/Launcher3" name="platform_packages_apps_Launcher3" remote="CAF-G3" />
-  <project path="packages/apps/PackageInstaller" name="platform_packages_apps_PackageInstaller" remote="CAF-G3" />
-  <project path="packages/apps/PhoneCommon" name="platform_packages_apps_PhoneCommon" remote="CAF-G3" />
-  <project path="packages/apps/Settings" name="platform_packages_apps_Settings" remote="CAF-G3" />
-  <project path="packages/apps/SnapdragonCamera" name="platform_packages_apps_SnapdragonCamera" remote="CAF-G3" />
-  <project path="packages/apps/SnapdragonMusic" name="platform_packages_apps_SnapdragonMusic" remote="CAF-G3" />
-  <project path="packages/inputmethods/LatinIME" name="platform_packages_inputmethods_LatinIME" remote="CAF-G3" />
-  <project path="packages/providers/MediaProvider" name="platform_packages_providers_MediaProvider" remote="CAF-G3" />
-  <project path="packages/services/Telecomm" name="platform_packages_services_Telecomm" remote="CAF-G3" />
-  <project path="packages/services/Telephony" name="platform_packages_services_Telephony" remote="CAF-G3" />
-  <project path="system/bt" name="platform_system_bt" remote="CAF-G3" />
-  <project path="system/core" name="platform_system_core" remote="CAF-G3" />
-  <project path="system/extras" name="platform_system_extras" remote="CAF-G3" />
-  <project path="system/media" name="platform_system_media" remote="CAF-G3" />
-  <project path="system/sepolicy" name="platform_system_sepolicy" remote="CAF-G3" />
-  <project path="system/vold" name="platform_system_vold" remote="CAF-G3" />
-  <project path="system/qcom" name="platform_system_qcom" remote="CAF-G3" />
-  <project path="vendor/aosp" name="platform_vendor_aosp" remote="CAF-G3" />
-<!-- END CAF-G3 -->
+  <project path="build/kati" name="platform_build_kati" groups="pdk,tradefed" remote="android-caf" />
+  <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="android-caf" />
+  <project path="external/bash" name="platform_external_bash" remote="android-caf" />
+  <project path="external/e2fsprogs" name="platform_external_e2fsprogs" remote="android-caf" />
+  <project path="external/busybox" name="platform_external_busybox" remote="android-caf" />
+  <project path="external/jemalloc" name="platform_external_jemalloc" remote="android-caf" />
+  <project path="external/fsck_msdos" name="platform_external_fsck_msdos" remote="android-caf" />
+  <project path="external/sqlite" name="platform_external_sqlite" remote="android-caf" />
+  <project path="frameworks/av" name="platform_frameworks_av" remote="android-caf" />
+  <project path="frameworks/base" name="platform_frameworks_base" remote="android-caf" />
+  <project path="frameworks/native" name="platform_frameworks_native" remote="android-caf" />
+  <project path="frameworks/opt/net/wifi" name="platform_frameworks_opt_net_wifi" remote="android-caf" />
+  <project path="frameworks/opt/telephony" name="platform_frameworks_opt_telephony" remote="android-caf" />
+  <project path="hardware/libhardware" name="platform_hardware_libhardware" remote="android-caf" />
+  <project path="manifest" name="platform_manifest" remote="android-caf" />
+  <project path="packages/apps/Bluetooth" name="platform_packages_apps_Bluetooth" remote="android-caf" />
+  <project path="packages/apps/Contacts" name="platform_packages_apps_Contacts" remote="android-caf" />
+  <project path="packages/apps/ContactsCommon" name="platform_packages_apps_ContactsCommon" remote="android-caf" />
+  <project path="packages/apps/Dialer" name="platform_packages_apps_Dialer" remote="android-caf" />
+  <project path="packages/apps/Launcher3" name="platform_packages_apps_Launcher3" remote="android-caf" />
+  <project path="packages/apps/PackageInstaller" name="platform_packages_apps_PackageInstaller" remote="android-caf" />
+  <project path="packages/apps/PhoneCommon" name="platform_packages_apps_PhoneCommon" remote="android-caf" />
+  <project path="packages/apps/Settings" name="platform_packages_apps_Settings" remote="android-caf" />
+  <project path="packages/apps/SnapdragonCamera" name="platform_packages_apps_SnapdragonCamera" remote="android-caf" />
+  <project path="packages/apps/SnapdragonMusic" name="platform_packages_apps_SnapdragonMusic" remote="android-caf" />
+  <project path="packages/inputmethods/LatinIME" name="platform_packages_inputmethods_LatinIME" remote="android-caf" />
+  <project path="packages/providers/MediaProvider" name="platform_packages_providers_MediaProvider" remote="android-caf" />
+  <project path="packages/services/Telecomm" name="platform_packages_services_Telecomm" remote="android-caf" />
+  <project path="packages/services/Telephony" name="platform_packages_services_Telephony" remote="android-caf" />
+  <project path="system/bt" name="platform_system_bt" remote="android-caf" />
+  <project path="system/core" name="platform_system_core" remote="android-caf" />
+  <project path="system/extras" name="platform_system_extras" remote="android-caf" />
+  <project path="system/netd" name="platform_system_netd" remote="android-caf" />
+  <project path="system/media" name="platform_system_media" remote="android-caf" />
+  <project path="system/sepolicy" name="platform_system_sepolicy" remote="android-caf" />
+  <project path="system/vold" name="platform_system_vold" remote="android-caf" />
+  <project path="system/qcom" name="platform_system_qcom" remote="android-caf" />
+  <project path="vendor/aosp" name="platform_vendor_aosp" remote="android-caf" />
+<!-- END android-caf -->
 	
-<!-- G3-Specific -->
-  <project path="device/lge/d850" name="device_lge_d850" remote="CAF-G3" />
-  <project path="device/lge/d851" name="device_lge_d851" remote="CAF-G3" />
-  <project path="device/lge/d852" name="device_lge_d852" remote="CAF-G3" />
-  <project path="device/lge/d855" name="device_lge_d855" remote="CAF-G3" />
-  <project path="device/lge/f400" name="device_lge_f400" remote="CAF-G3" />
-  <project path="device/lge/g3ds" name="device_lge_g3ds" remote="CAF-G3" />
-  <project path="device/lge/ls990" name="device_lge_ls990" remote="CAF-G3" />
-  <project path="device/lge/vs985" name="device_lge_vs985" remote="CAF-G3" />
-  <project path="device/lge/g3-common" name="device_lge_g3-common" remote="CAF-G3" />
-  <project path="kernel/lge/g3" name="kernel_lge_g3" remote="CAF-G3" />
-  <project path="vendor/lge" name="vendor_lge" remote="CAF-G3" />
-<!-- END G3-Specific -->
+<!-- Xiaomi Mi 5 Specific -->
+  <project path="device/xiaomi/gemini" name="33bca/android_device_xiaomi_gemini" remote="github" revision="aosp-7.1-caf" />
+  <project path="kernel/xiaomi/msm8996" name="android_kernel_xiaomi_msm8996" remote="laos" />
+<!-- END Xiaomi Mi 5 Specific -->
+
+<!-- Xiaomi Redmi Note 3 Specific -->
+  <project path="device/xiaomi/kenzo" name="device_xiaomi_kenzo" remote="android-caf" />
+  <project path="device/xiaomi/msm8956-common" name="device_xiaomi_msm8956-common" remote="android-caf" />
+  <project path="kernel/xiaomi/msm8956" name="kernel_xiaomi_msm8956" remote="android-caf" />
+<!-- END Xiaomi Redmi Note 3 Specific -->
+	
+<!-- Xiaomi Specific -->
+  <project path="vendor/xiaomi" name="vendor_xiaomi" remote="android-caf" />
+<!-- END Xiaomi Specific -->
 
 <!-- LINEAGEOS -->
   <project name="android_device_qcom_common" path="device/qcom/common" remote="laos" />
+  <project name="android_external_ant-wireless_ant_native" path="external/ant-wireless/ant_native" remote="laos" />
+  <project name="android_external_ant-wireless_ant_service" path="external/ant-wireless/ant_service" remote="laos" />
+  <project name="android_external_ant-wireless_antradio-library" path="external/ant-wireless/antradio-library" remote="laos" />
   <project name="android_external_bson" path="external/bson" remote="laos" />
   <project name="android_external_connectivity" path="external/connectivity" remote="laos" />
   <project name="android_external_exfat" path="external/exfat" remote="laos" />
@@ -94,17 +99,24 @@
   <project name="android_external_wpa_supplicant_8" path="external/wpa_supplicant_8" remote="laos" />
   <project name="android_hardware_broadcom_libbt" path="hardware/broadcom/libbt" groups="pdk" remote="laos" />
   <project name="android_hardware_broadcom_wlan" path="hardware/broadcom/wlan" groups="pdk,broadcom_wlan" remote="laos" />
+  <project name="android_hardware_cyanogen" path="hardware/cyanogen" remote="laos" />
+  <project name="android_hardware_qcom_audio" path="hardware/qcom/audio-caf/msm8952" remote="laos" revision="cm-14.1-caf-8952" />
   <project name="android_hardware_qcom_audio" path="hardware/qcom/audio-caf/msm8974" remote="laos" revision="cm-14.1-caf-8974" />
+  <project name="android_hardware_qcom_audio" path="hardware/qcom/audio-caf/msm8996" remote="laos" revision="cm-14.1-caf-8996" />
   <project name="android_hardware_qcom_audio" path="hardware/qcom/audio/default" remote="laos" />
   <project name="android_hardware_qcom_bt" path="hardware/qcom/bt" remote="laos" />
   <project name="android_hardware_qcom_bt" path="hardware/qcom/bt-caf" revision="cm-14.1-caf" remote="laos" />
   <project name="android_hardware_qcom_camera" path="hardware/qcom/camera" remote="laos" />
   <project name="android_hardware_qcom_display" path="hardware/qcom/display" remote="laos" />
+  <project name="android_hardware_qcom_display" path="hardware/qcom/display-caf/msm8952" remote="laos" revision="cm-14.1-caf-8952" />
   <project name="android_hardware_qcom_display" path="hardware/qcom/display-caf/msm8974" remote="laos" revision="cm-14.1-caf-8974" />
+  <project name="android_hardware_qcom_display" path="hardware/qcom/display-caf/msm8996" remote="laos" revision="cm-14.1-caf-8996" />
   <project name="android_hardware_qcom_fm" path="hardware/qcom/fm" remote="laos" />
   <project name="android_hardware_qcom_gps" path="hardware/qcom/gps" remote="laos" />
   <project name="android_hardware_qcom_keymaster" path="hardware/qcom/keymaster" remote="laos" />
+  <project name="android_hardware_qcom_media" path="hardware/qcom/media-caf/msm8952"  remote="laos" revision="cm-14.1-caf-8952" />
   <project name="android_hardware_qcom_media" path="hardware/qcom/media-caf/msm8974"  remote="laos" revision="cm-14.1-caf-8974" />
+  <project name="android_hardware_qcom_media" path="hardware/qcom/media-caf/msm8996"  remote="laos" revision="cm-14.1-caf-8996" />
   <project name="android_hardware_qcom_media" path="hardware/qcom/media/default" remote="laos" />
   <project name="android_hardware_qcom_wlan" path="hardware/qcom/wlan" remote="laos" />
   <project name="android_hardware_qcom_wlan" path="hardware/qcom/wlan-caf" revision="cm-14.1-caf" remote="laos" />
@@ -113,6 +125,9 @@
   <project name="android_packages_apps_FMRadio" path="packages/apps/FMRadio" remote="laos" />
   <project name="android_packages_apps_Gallery2" path="packages/apps/Gallery2" remote="laos" />
   <project name="android_packages_apps_SoundRecorder" path="packages/apps/SoundRecorder" remote="laos" />
+  <project name="android_vendor_nxp-nfc_opensource_frameworks" path="vendor/nxp-nfc/opensource/frameworks" remote="laos" />
+  <project name="android_vendor_nxp-nfc_opensource_libnfc-nci" path="vendor/nxp-nfc/opensource/libnfc-nci" remote="laos" />
+  <project name="android_vendor_nxp-nfc_opensource_Nfc" path="vendor/nxp-nfc/opensource/Nfc" remote="laos" />
   <project name="android_vendor_qcom_opensource_bluetooth" path="vendor/qcom/opensource/bluetooth" remote="laos" />
   <project name="android_vendor_qcom_opensource_cryptfs_hw" path="vendor/qcom/opensource/cryptfs_hw" remote="laos" />
   <project name="android_vendor_qcom_opensource_dataservices" path="vendor/qcom/opensource/dataservices" remote="laos" />
@@ -139,7 +154,6 @@
   <project name="platform/external/android-clat" path="external/android-clat" groups="pdk" />
   <project name="platform/external/androidplot" path="external/androidplot" groups="pdk" />
   <project name="platform/external/ant-glob" path="external/ant-glob" groups="pdk" />
-  <project name="platform/external/ant-wireless/ant_service" path="external/ant-wireless/ant_service" groups="pdk" />
   <project name="platform/external/antlr" path="external/antlr" groups="pdk" />
   <project name="platform/external/apache-commons-math" path="external/apache-commons-math" groups="pdk" />
   <project name="platform/external/apache-harmony" path="external/apache-harmony" groups="pdk" />
@@ -395,7 +409,6 @@
   <project name="platform/frameworks/opt/net/ethernet" path="frameworks/opt/net/ethernet" groups="pdk-fs" />
   <project name="platform/frameworks/opt/net/ims" path="frameworks/opt/net/ims" groups="frameworks_ims,pdk-cw-fs,pdk-fs" />
   <project name="platform/frameworks/opt/net/voip" path="frameworks/opt/net/voip" groups="pdk-cw-fs,pdk-fs" />
-  <project name="platform/frameworks/opt/net/wifi" path="frameworks/opt/net/wifi" groups="pdk" />
   <project name="platform/frameworks/opt/photoviewer" path="frameworks/opt/photoviewer" groups="pdk-cw-fs,pdk-fs" />
   <project name="platform/frameworks/opt/setupwizard" path="frameworks/opt/setupwizard" groups="pdk-cw-fs,pdk-fs" />
   <project name="platform/frameworks/opt/timezonepicker" path="frameworks/opt/timezonepicker" groups="pdk-cw-fs,pdk-fs" />
@@ -508,7 +521,6 @@
   <project name="platform/system/gatekeeper" path="system/gatekeeper" groups="pdk" />
   <project name="platform/system/keymaster" path="system/keymaster" groups="pdk" />
   <project name="platform/system/nativepower" path="system/nativepower" groups="pdk" />
-  <project name="platform/system/netd" path="system/netd" groups="pdk" />
   <project name="platform/system/nvram" path="system/nvram" groups="pdk" />
   <project name="platform/system/security" path="system/security" groups="pdk" />
   <project name="platform/system/tools/aidl" path="system/tools/aidl" groups="pdk" />
