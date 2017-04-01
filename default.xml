@@ -78,6 +78,7 @@
 
 <!-- LINEAGEOS -->
   <project name="android_device_qcom_common" path="device/qcom/common" remote="laos" />
+  <project name="android_external_ahbottomnavigation" path="external/ahbottomnavigation" remote="laos" />
   <project name="android_external_ant-wireless_ant_native" path="external/ant-wireless/ant_native" remote="laos" />
   <project name="android_external_ant-wireless_ant_service" path="external/ant-wireless/ant_service" remote="laos" />
   <project name="android_external_ant-wireless_antradio-library" path="external/ant-wireless/antradio-library" remote="laos" />
