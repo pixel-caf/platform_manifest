@@ -28,6 +28,7 @@
   <project path="external/jemalloc" name="platform_external_jemalloc" remote="android-caf" />
   <project path="external/fsck_msdos" name="platform_external_fsck_msdos" remote="android-caf" />
   <project path="external/sqlite" name="platform_external_sqlite" remote="android-caf" />
+  <project path="external/toybox" name="platform_external_toybox" remote="android-caf" />
   <project path="frameworks/av" name="platform_frameworks_av" remote="android-caf" />
   <project path="frameworks/base" name="platform_frameworks_base" remote="android-caf" />
   <project path="frameworks/native" name="platform_frameworks_native" remote="android-caf" />
@@ -371,7 +372,6 @@
   <project name="platform/external/tinyxml" path="external/tinyxml" groups="pdk" />
   <project name="platform/external/tinyxml2" path="external/tinyxml2" groups="pdk" />
   <project name="platform/external/tlsdate" path="external/tlsdate" groups="pdk" />
-  <project name="platform/external/toybox" path="external/toybox" groups="pdk" />
   <project name="platform/external/tpm2" path="external/tpm2" groups="pdk" />
   <project name="platform/external/tremolo" path="external/tremolo" groups="pdk" />
   <project name="platform/external/unicode" path="external/unicode" groups="pdk" />
