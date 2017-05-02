@@ -4,7 +4,7 @@
   <remote  name="caf"
            fetch="http://source.codeaurora.org/quic/la"
            review="codeaurora.org"/>
-  <default revision="refs/tags/LA.UM.5.6.r1-04300-89xx.0"
+  <default revision="LA.BR.1.3.6_rb1.17"
            remote="caf"
            sync-j="8"
            sync-c="true"/>
@@ -18,7 +18,7 @@
 	
   <remote  name="android-caf"
            fetch="https://github.com/android-caf" 
-           revision="n-mr1" /> 
+           revision="LA.BR.1.3.6_rb1.17" /> 
 	
 <!-- BEGIN android-caf -->
   <project path="art" name="platform_art" remote="android-caf" />
@@ -63,14 +63,8 @@
   <project path="system/media" name="platform_system_media" remote="android-caf" />
   <project path="system/sepolicy" name="platform_system_sepolicy" remote="android-caf" />
   <project path="system/vold" name="platform_system_vold" remote="android-caf" />
-  <project path="system/qcom" name="platform_system_qcom" remote="android-caf" />
   <project path="vendor/aosp" name="platform_vendor_aosp" remote="android-caf" />
 <!-- END android-caf -->
-	
-<!-- Xiaomi Mi 5 Specific -->
-  <project path="device/xiaomi/gemini" name="33bca/android_device_xiaomi_gemini" remote="github" revision="aosp-7.1-caf" />
-  <project path="kernel/xiaomi/msm8996" name="android_kernel_xiaomi_msm8996" remote="laos" />
-<!-- END Xiaomi Mi 5 Specific -->
 
 <!-- Xiaomi Redmi Note 3 Specific -->
   <project path="device/xiaomi/kenzo" name="device_xiaomi_kenzo" remote="android-caf" />
@@ -109,22 +103,16 @@
   <project name="android_hardware_broadcom_wlan" path="hardware/broadcom/wlan" groups="pdk,broadcom_wlan" remote="laos" />
   <project name="android_hardware_cyanogen" path="hardware/cyanogen" remote="laos" />
   <project name="android_hardware_qcom_audio" path="hardware/qcom/audio-caf/msm8952" remote="laos" revision="cm-14.1-caf-8952" />
-  <project name="android_hardware_qcom_audio" path="hardware/qcom/audio-caf/msm8974" remote="laos" revision="cm-14.1-caf-8974" />
-  <project name="android_hardware_qcom_audio" path="hardware/qcom/audio-caf/msm8996" remote="laos" revision="cm-14.1-caf-8996" />
   <project name="android_hardware_qcom_audio" path="hardware/qcom/audio/default" remote="laos" />
   <project name="android_hardware_qcom_bt" path="hardware/qcom/bt" remote="laos" />
   <project name="android_hardware_qcom_bt" path="hardware/qcom/bt-caf" revision="cm-14.1-caf" remote="laos" />
   <project name="android_hardware_qcom_camera" path="hardware/qcom/camera" remote="laos" />
   <project name="android_hardware_qcom_display" path="hardware/qcom/display" remote="laos" />
   <project name="android_hardware_qcom_display" path="hardware/qcom/display-caf/msm8952" remote="laos" revision="cm-14.1-caf-8952" />
-  <project name="android_hardware_qcom_display" path="hardware/qcom/display-caf/msm8974" remote="laos" revision="cm-14.1-caf-8974" />
-  <project name="android_hardware_qcom_display" path="hardware/qcom/display-caf/msm8996" remote="laos" revision="cm-14.1-caf-8996" />
   <project name="android_hardware_qcom_fm" path="hardware/qcom/fm" remote="laos" />
   <project name="android_hardware_qcom_gps" path="hardware/qcom/gps" remote="laos" />
   <project name="android_hardware_qcom_keymaster" path="hardware/qcom/keymaster" remote="laos" />
   <project name="android_hardware_qcom_media" path="hardware/qcom/media-caf/msm8952"  remote="laos" revision="cm-14.1-caf-8952" />
-  <project name="android_hardware_qcom_media" path="hardware/qcom/media-caf/msm8974"  remote="laos" revision="cm-14.1-caf-8974" />
-  <project name="android_hardware_qcom_media" path="hardware/qcom/media-caf/msm8996"  remote="laos" revision="cm-14.1-caf-8996" />
   <project name="android_hardware_qcom_media" path="hardware/qcom/media/default" remote="laos" />
   <project name="android_hardware_qcom_wlan" path="hardware/qcom/wlan" remote="laos" />
   <project name="android_hardware_qcom_wlan" path="hardware/qcom/wlan-caf" revision="cm-14.1-caf" remote="laos" />
@@ -133,6 +121,7 @@
   <project name="android_packages_apps_FMRadio" path="packages/apps/FMRadio" remote="laos" />
   <project name="android_packages_apps_Gallery2" path="packages/apps/Gallery2" remote="laos" />
   <project name="android_packages_apps_SoundRecorder" path="packages/apps/SoundRecorder" remote="laos" />
+  <project name="android_system_qcom" path="system/qcom" remote="laos" />
   <project name="android_vendor_nxp-nfc_opensource_frameworks" path="vendor/nxp-nfc/opensource/frameworks" remote="laos" />
   <project name="android_vendor_nxp-nfc_opensource_libnfc-nci" path="vendor/nxp-nfc/opensource/libnfc-nci" remote="laos" />
   <project name="android_vendor_nxp-nfc_opensource_Nfc" path="vendor/nxp-nfc/opensource/Nfc" remote="laos" />
@@ -385,7 +374,6 @@
   <project name="platform/external/universal-tween-engine" path="external/universal-tween-engine" groups="pdk" />
   <project name="platform/external/v8" path="external/v8" groups="pdk" />
   <project name="platform/external/valgrind" path="external/valgrind" groups="pdk" />
-  <project name="platform/external/vboot_reference" path="external/vboot_reference" groups="vboot,pdk-fs" />
   <project name="platform/external/vixl" path="external/vixl" groups="pdk" />
   <project name="platform/external/vogar" path="external/vogar" groups="pdk" />
   <project name="platform/external/vulkan-validation-layers" path="external/vulkan-validation-layers" />
@@ -539,14 +527,13 @@
   <project name="platform/tools/external/gradle" path="tools/external/gradle" groups="tools" />
   <project name="platform/tools/test/connectivity" path="tools/test/connectivity" />
   <project name="platform/vendor/codeaurora/telephony" path="vendor/codeaurora/telephony" />
-  <project name="platform/vendor/qcom-opensource/fst-manager" path="vendor/qcom/opensource/fst-manager" />
-  <project name="platform/vendor/qcom-opensource/mmc-utils" path="vendor/qcom/opensource/mmc-utils" />
   <project name="platform/vendor/qcom-opensource/rcs-service" path="vendor/qcom/opensource/rcs-service" />
-  <project name="platform/vendor/qcom-opensource/shortcut-fe" path="shortcut-fe" />
-  <project name="platform/vendor/qcom-opensource/tools" path="vendor/qcom/opensource/tools" />
 <!-- END CODEAURORA -->
-	
- <!-- Masquerade -->
+
+<!-- SDCLANG -->
+  <project path="vendor/qcom/sdclang-3.8/linux-x86/bin" name="ThankYouMario/proprietary_vendor_qcom_sdclang-3.8_linux-x86" remote="github" revision="nougat-mr1" />
+
+<!-- Masquerade -->
   <project path="packages/apps/ThemeInterfacer" name="substratum/interfacer" remote="github" revision="n-rootless" />
 
 </manifest>
