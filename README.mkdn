@@ -9,7 +9,7 @@ familiar with [Git and Repo](http://source.android.com/source/using-repo.html).
 
 To initialize your local repository using the android-caf trees, use a command like this:
 
-    repo init -u https://github.com/android-caf/platform_manifest.git -b n-mr1
+    repo init -u https://github.com/android-caf/platform_manifest.git -b n-mr2
 
 Then to sync up:
 
@@ -18,9 +18,7 @@ Then to sync up:
 Building the source
 ---------------
 
-    $ . build/envsetup.sh
-    $ lunch aosp_DEVICE-userdebug
-    $ make -jX otapackage
+    $ . build/envsetup.sh && lunch aosp_DEVICE-userdebug && make -jX otapackage
 
 where DEVICE is set the variant.
 
