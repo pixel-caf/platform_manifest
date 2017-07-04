@@ -4,7 +4,7 @@
   <remote  name="caf"
            fetch="http://source.codeaurora.org/quic/la"
            review="codeaurora.org"/>
-  <default revision="refs/tags/LA.UM.5.6.r1-04600-89xx.0"
+  <default revision="refs/tags/LA.UM.5.6.r1-05100-89xx.0"
            remote="caf"
            sync-j="8"
            sync-c="true"/>
@@ -16,69 +16,61 @@
            fetch="https://github.com/LineageOS"
            revision="refs/heads/cm-14.1" />
 	
-  <remote  name="android-caf"
-           fetch="https://github.com/android-caf" 
+  <remote  name="pixel-caf"
+           fetch="https://github.com/pixel-caf" 
            revision="n-mr2" /> 
 	
-<!-- BEGIN android-caf -->
-  <project path="art" name="platform_art" remote="android-caf" />
-  <project path="bionic" name="platform_bionic" remote="android-caf" />
-  <project path="build" name="platform_build" remote="android-caf" >
+<!-- BEGIN pixel-caf -->
+  <project path="art" name="platform_art" remote="pixel-caf" />
+  <project path="bionic" name="platform_bionic" remote="pixel-caf" />
+  <project path="build" name="platform_build" remote="pixel-caf" >
   <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-  <project path="build/kati" name="platform_build_kati" groups="pdk,tradefed" remote="android-caf" />
-  <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="android-caf" />
-  <project path="external/bash" name="platform_external_bash" remote="android-caf" />
-  <project path="external/e2fsprogs" name="platform_external_e2fsprogs" remote="android-caf" />
-  <project path="external/busybox" name="platform_external_busybox" remote="android-caf" />
-  <project path="external/jemalloc" name="platform_external_jemalloc" remote="android-caf" />
-  <project path="external/fsck_msdos" name="platform_external_fsck_msdos" remote="android-caf" />
-  <project path="external/sqlite" name="platform_external_sqlite" remote="android-caf" />
-  <project path="external/toybox" name="platform_external_toybox" remote="android-caf" />
-  <project path="frameworks/av" name="platform_frameworks_av" remote="android-caf" />
-  <project path="frameworks/base" name="platform_frameworks_base" remote="android-caf" />
-  <project path="frameworks/native" name="platform_frameworks_native" remote="android-caf" />
-  <project path="frameworks/opt/net/wifi" name="platform_frameworks_opt_net_wifi" remote="android-caf" />
-  <project path="frameworks/opt/telephony" name="platform_frameworks_opt_telephony" remote="android-caf" />
-  <project path="hardware/libhardware" name="platform_hardware_libhardware" remote="android-caf" />
-  <project path="manifest" name="platform_manifest" remote="android-caf" />
-  <project path="packages/apps/Bluetooth" name="platform_packages_apps_Bluetooth" remote="android-caf" />
-  <project path="packages/apps/ContactsCommon" name="platform_packages_apps_ContactsCommon" remote="android-caf" />
-  <project path="packages/apps/Dialer" name="platform_packages_apps_Dialer" remote="android-caf" />
-  <project path="packages/apps/Launcher3" name="platform_packages_apps_Launcher3" remote="android-caf" />
-  <project path="packages/apps/PackageInstaller" name="platform_packages_apps_PackageInstaller" remote="android-caf" />
-  <project path="packages/apps/PhoneCommon" name="platform_packages_apps_PhoneCommon" remote="android-caf" />
-  <project path="packages/apps/Settings" name="platform_packages_apps_Settings" remote="android-caf" />
-  <project path="packages/apps/SnapdragonCamera" name="platform_packages_apps_SnapdragonCamera" remote="android-caf" />
-  <project path="packages/apps/SnapdragonMusic" name="platform_packages_apps_SnapdragonMusic" remote="android-caf" />
-  <project path="packages/inputmethods/LatinIME" name="platform_packages_inputmethods_LatinIME" remote="android-caf" />
-  <project path="packages/providers/MediaProvider" name="platform_packages_providers_MediaProvider" remote="android-caf" />
-  <project path="packages/services/Telecomm" name="platform_packages_services_Telecomm" remote="android-caf" />
-  <project path="packages/services/Telephony" name="platform_packages_services_Telephony" remote="android-caf" />
-  <project path="system/bt" name="platform_system_bt" remote="android-caf" />
-  <project path="system/core" name="platform_system_core" remote="android-caf" />
-  <project path="system/extras" name="platform_system_extras" remote="android-caf" />
-  <project path="system/netd" name="platform_system_netd" remote="android-caf" />
-  <project path="system/media" name="platform_system_media" remote="android-caf" />
-  <project path="system/sepolicy" name="platform_system_sepolicy" remote="android-caf" />
-  <project path="system/vold" name="platform_system_vold" remote="android-caf" />
-  <project path="vendor/aosp" name="platform_vendor_aosp" remote="android-caf" />
-<!-- END android-caf -->
+  <project path="build/kati" name="platform_build_kati" groups="pdk,tradefed" remote="pixel-caf" />
+  <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="pixel-caf" />
+  <project path="external/bash" name="platform_external_bash" remote="pixel-caf" />
+  <project path="external/e2fsprogs" name="platform_external_e2fsprogs" remote="pixel-caf" />
+  <project path="external/busybox" name="platform_external_busybox" remote="pixel-caf" />
+  <project path="external/jemalloc" name="platform_external_jemalloc" remote="pixel-caf" />
+  <project path="external/fsck_msdos" name="platform_external_fsck_msdos" remote="pixel-caf" />
+  <project path="external/sqlite" name="platform_external_sqlite" remote="pixel-caf" />
+  <project path="external/toybox" name="platform_external_toybox" remote="pixel-caf" />
+  <project path="frameworks/av" name="platform_frameworks_av" remote="pixel-caf" />
+  <project path="frameworks/base" name="platform_frameworks_base" remote="pixel-caf" />
+  <project path="frameworks/native" name="platform_frameworks_native" remote="pixel-caf" />
+  <project path="frameworks/opt/net/wifi" name="platform_frameworks_opt_net_wifi" remote="pixel-caf" />
+  <project path="frameworks/opt/telephony" name="platform_frameworks_opt_telephony" remote="pixel-caf" />
+  <project path="hardware/libhardware" name="platform_hardware_libhardware" remote="pixel-caf" />
+  <project path="manifest" name="platform_manifest" remote="pixel-caf" />
+  <project path="packages/apps/Bluetooth" name="platform_packages_apps_Bluetooth" remote="pixel-caf" />
+  <project path="packages/apps/ContactsCommon" name="platform_packages_apps_ContactsCommon" remote="pixel-caf" />
+  <project path="packages/apps/Dialer" name="platform_packages_apps_Dialer" remote="pixel-caf" />
+  <project path="packages/apps/Launcher3" name="platform_packages_apps_Launcher3" remote="pixel-caf" />
+  <project path="packages/apps/PackageInstaller" name="platform_packages_apps_PackageInstaller" remote="pixel-caf" />
+  <project path="packages/apps/PhoneCommon" name="platform_packages_apps_PhoneCommon" remote="pixel-caf" />
+  <project path="packages/apps/Settings" name="platform_packages_apps_Settings" remote="pixel-caf" />
+  <project path="packages/apps/SnapdragonCamera" name="platform_packages_apps_SnapdragonCamera" remote="pixel-caf" />
+  <project path="packages/apps/SnapdragonMusic" name="platform_packages_apps_SnapdragonMusic" remote="pixel-caf" />
+  <project path="packages/inputmethods/LatinIME" name="platform_packages_inputmethods_LatinIME" remote="pixel-caf" />
+  <project path="packages/providers/MediaProvider" name="platform_packages_providers_MediaProvider" remote="pixel-caf" />
+  <project path="packages/services/Telecomm" name="platform_packages_services_Telecomm" remote="pixel-caf" />
+  <project path="packages/services/Telephony" name="platform_packages_services_Telephony" remote="pixel-caf" />
+  <project path="system/bt" name="platform_system_bt" remote="pixel-caf" />
+  <project path="system/core" name="platform_system_core" remote="pixel-caf" />
+  <project path="system/extras" name="platform_system_extras" remote="pixel-caf" />
+  <project path="system/netd" name="platform_system_netd" remote="pixel-caf" />
+  <project path="system/media" name="platform_system_media" remote="pixel-caf" />
+  <project path="system/sepolicy" name="platform_system_sepolicy" remote="pixel-caf" />
+  <project path="system/vold" name="platform_system_vold" remote="pixel-caf" />
+  <project path="vendor/aosp" name="platform_vendor_aosp" remote="pixel-caf" />
+<!-- END pixel-caf -->
 	
-<!-- Xiaomi Mi 5 Specific -->
-  <project path="device/xiaomi/gemini" name="33bca/android_device_xiaomi_gemini" remote="github" revision="aosp-7.1-caf" />
-  <project path="kernel/xiaomi/msm8996" name="android_kernel_xiaomi_msm8996" remote="laos" />
-<!-- END Xiaomi Mi 5 Specific -->
-
-<!-- Xiaomi Redmi Note 3 Specific -->
-  <project path="device/xiaomi/kenzo" name="device_xiaomi_kenzo" remote="android-caf" />
-  <project path="device/xiaomi/msm8956-common" name="device_xiaomi_msm8956-common" remote="android-caf" />
-  <project path="kernel/xiaomi/msm8956" name="kernel_xiaomi_msm8956" remote="android-caf" />
-<!-- END Xiaomi Redmi Note 3 Specific -->
-	
-<!-- Xiaomi Specific -->
-  <project path="vendor/xiaomi" name="vendor_xiaomi" remote="android-caf" />
-<!-- END Xiaomi Specific -->
+<!-- G3-Specific -->
+  <project path="device/lge/d855" name="device_lge_d855" remote="pixel-caf" revision="n-mr1" />
+  <project path="device/lge/g3-common" name="device_lge_g3-common" remote="pixel-caf" revision="n-mr1"/>
+  <project path="kernel/lge/g3" name="kernel_lge_g3" remote="pixel-caf" revision="n-mr1" />
+  <project path="vendor/lge" name="TheMuppets/proprietary_vendor_lge" remote="github" revision="cm-14.1" />
+<!-- END G3-Specific -->
 
 <!-- LINEAGEOS -->
   <project name="android_device_qcom_common" path="device/qcom/common" remote="laos" />
