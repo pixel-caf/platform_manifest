@@ -66,9 +66,9 @@
 <!-- END pixel-caf -->
 	
 <!-- G3-Specific -->
-  <project path="device/lge/d855" name="device_lge_d855" remote="pixel-caf" revision="n-mr1" />
-  <project path="device/lge/g3-common" name="device_lge_g3-common" remote="pixel-caf" revision="n-mr1"/>
-  <project path="kernel/lge/g3" name="kernel_lge_g3" remote="pixel-caf" revision="n-mr1" />
+  <project path="device/lge/d855" name="device_lge_d855" remote="pixel-caf" revision="n-mr2" />
+  <project path="device/lge/g3-common" name="device_lge_g3-common" remote="pixel-caf" revision="n-mr2"/>
+  <project path="kernel/lge/g3" name="G3-aosp-N/android_kernel_lge_g3" remote="github" revision="cm-14.1" />
   <project path="vendor/lge" name="TheMuppets/proprietary_vendor_lge" remote="github" revision="cm-14.1" />
 <!-- END G3-Specific -->
 
