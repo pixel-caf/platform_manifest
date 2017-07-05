@@ -9,7 +9,7 @@ familiar with [Git and Repo](http://source.android.com/source/using-repo.html).
 
 To initialize your local repository using the android-caf trees, use a command like this:
 
-    repo init -u https://github.com/pixel-caf/platform_manifest.git -b n-mr2
+    repo init -u https://github.com/pure-caf/platform_manifest.git -b n-mr2
 
 Then to sync up:
 
