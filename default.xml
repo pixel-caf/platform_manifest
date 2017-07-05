@@ -12,6 +12,13 @@
   <remote  name="github"
            fetch="https://github.com" />
 
+  <remote  name="Unlegacy-Android"
+           fetch="https://github.com/Unlegacy-Android" 
+           revision="aosp-7.1" />
+
+
+
+
   <remote  name="laos"
            fetch="https://github.com/LineageOS"
            revision="refs/heads/cm-14.1" />
@@ -71,6 +78,12 @@
   <project path="kernel/lge/g3" name="G3-aosp-N/android_kernel_lge_g3" remote="github" revision="cm-14.1" />
   <project path="vendor/lge" name="TheMuppets/proprietary_vendor_lge" remote="github" revision="cm-14.1" />
 <!-- END G3-Specific -->
+
+<!-- hammerhead-Specific -->
+  <project path="device/lge/hammerhead" name="device_lge_hammerhead" remote="Unlegacy-Android" revision="n-mr2"/>
+  <project path="kernel/lge/hammerhead" name="android_kernel_lge_hammerhead" remote="Unlegacy-Android" />
+<!-- END hammerhead-Specific -->
+
 
 <!-- LINEAGEOS -->
   <project name="android_device_qcom_common" path="device/qcom/common" remote="laos" />
