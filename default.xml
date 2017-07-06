@@ -16,9 +16,6 @@
            fetch="https://github.com/Unlegacy-Android" 
            revision="aosp-7.1" />
 
-
-
-
   <remote  name="laos"
            fetch="https://github.com/LineageOS"
            revision="refs/heads/cm-14.1" />
@@ -80,8 +77,8 @@
 <!-- END G3-Specific -->
 
 <!-- hammerhead-Specific -->
-  <project path="device/lge/hammerhead" name="device_lge_hammerhead" remote="Unlegacy-Android" revision="n-mr2"/>
-  <project path="kernel/lge/hammerhead" name="android_kernel_lge_hammerhead" remote="Unlegacy-Android" />
+  <project path="device/lge/hammerhead" name="android_device_lge_hammerhead" remote="pure-caf" />
+  <project path="kernel/lge/hammerhead" name="Unlegacy-Android/android_kernel_lge_hammerhead" remote="github" revision="stable" />
 <!-- END hammerhead-Specific -->
 
 
