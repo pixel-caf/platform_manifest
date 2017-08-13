@@ -4,7 +4,7 @@
   <remote  name="caf"
            fetch="http://source.codeaurora.org/quic/la"
            review="codeaurora.org"/>
-  <default revision="refs/tags/LA.UM.5.6.r1-05400-89xx.0"
+  <default revision="refs/tags/LA.UM.5.6.r1-05600-89xx.0"
            remote="caf"
            sync-j="8"
            sync-c="true"/>
@@ -53,7 +53,7 @@
   <project path="packages/apps/PackageInstaller" name="platform_packages_apps_PackageInstaller" remote="pure-caf" />
   <project path="packages/apps/PhoneCommon" name="platform_packages_apps_PhoneCommon" remote="pure-caf" />
   <project path="packages/apps/Settings" name="platform_packages_apps_Settings" remote="pure-caf" />
-  <project path="packages/apps/SnapdragonCamera" name="platform_packages_apps_SnapdragonCamera" remote="pure-caf" />
+  <project path="packages/apps/SnapdragonCamera" name="AOSPA/android_packages_apps_SnapdragonCamera" remote="github" revision="nougat-mr2" />
   <project path="packages/apps/SnapdragonMusic" name="platform_packages_apps_SnapdragonMusic" remote="pure-caf" />
   <project path="packages/inputmethods/LatinIME" name="platform_packages_inputmethods_LatinIME" remote="pure-caf" />
   <project path="packages/providers/MediaProvider" name="platform_packages_providers_MediaProvider" remote="pure-caf" />
@@ -73,7 +73,7 @@
   <project path="device/lge/d855" name="device_lge_d855" remote="pure-caf" revision="n-mr2" />
   <project path="device/lge/g3-common" name="device_lge_g3-common" remote="pure-caf" revision="n-mr2"/>
   <project path="kernel/lge/g3" name="G3-aosp-N/android_kernel_lge_g3" remote="github" revision="cm-14.1" />
-  <project path="vendor/lge" name="TheMuppets/proprietary_vendor_lge" remote="github" revision="cm-14.1" />
+  <project path="vendor/lge" name="g3-aosp-N/proprietary_vendor_lge" remote="github" revision="cm-14.1" />
 <!-- END G3-Specific -->
 
 <!-- hammerhead-Specific -->
