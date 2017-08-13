@@ -56,7 +56,7 @@
   <project path="packages/apps/Launcher3" name="platform_packages_apps_Launcher3" remote="pure-caf" />
   <project path="packages/apps/PackageInstaller" name="platform_packages_apps_PackageInstaller" remote="pure-caf" />
   <project path="packages/apps/PhoneCommon" name="platform_packages_apps_PhoneCommon" remote="pure-caf" />
-  <project path="packages/apps/Settings" name="platform_packages_apps_Settings" remote="pure-caf" />
+  <project path="packages/apps/Settings" name="platform_packages_apps_Settings" remote="pure-caf" revision="n-mr2-keys" />
   <project path="packages/apps/SnapdragonCamera" name="AOSPA/android_packages_apps_SnapdragonCamera" remote="github" revision="nougat-mr2" />
   <project path="packages/apps/SnapdragonMusic" name="platform_packages_apps_SnapdragonMusic" remote="pure-caf" />
   <project path="packages/inputmethods/LatinIME" name="platform_packages_inputmethods_LatinIME" remote="pure-caf" />
@@ -86,10 +86,10 @@
 <!-- END hammerhead-Specific -->
 
 <!-- Xiaomi Redmi Note 3 Specific -->
-  <project path="device/xiaomi/kenzo" name="device_xiaomi_kenzo" remote="android-caf" />
-  <project path="device/xiaomi/msm8956-common" name="device_xiaomi_msm8956-common" remote="android-caf" />
-  <project path="kernel/xiaomi/msm8956" name="kernel_xiaomi_msm8956" remote="android-caf" />
-  <project path="vendor/xiaomi" name="vendor_xiaomi" remote="android-caf" />
+  <project path="device/xiaomi/kenzo" name="device_xiaomi_kenzo" remote="aosp-caf" />
+  <project path="device/xiaomi/msm8956-common" name="device_xiaomi_msm8956-common" remote="aosp-caf" />
+  <project path="kernel/xiaomi/msm8956" name="kernel_xiaomi_msm8956" remote="aosp-caf" />
+  <project path="vendor/xiaomi" name="vendor_xiaomi" remote="aosp-caf" />
 <!-- END Xiaomi Redmi Note 3 Specific -->
 
 <!-- LINEAGEOS -->
