@@ -22,7 +22,7 @@
 	
   <remote  name="pure-caf"
            fetch="https://github.com/pure-caf" 
-           revision="n-mr2" /> 
+           revision="patch-1" /> 
 	
 <!-- BEGIN pure-caf -->
   <project path="art" name="platform_art" remote="pure-caf" />
