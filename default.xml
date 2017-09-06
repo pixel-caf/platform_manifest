@@ -69,18 +69,11 @@
   <project path="vendor/aosp" name="platform_vendor_aosp" remote="pure-caf" />
 <!-- END pure-caf -->
 	
-<!-- G3-Specific -->
-  <project path="device/lge/d855" name="device_lge_d855" remote="pure-caf" revision="n-mr2" />
-  <project path="device/lge/g3-common" name="device_lge_g3-common" remote="pure-caf" revision="n-mr2"/>
-  <project path="kernel/lge/g3" name="G3-aosp-N/android_kernel_lge_g3" remote="github" revision="cm-14.1" />
-  <project path="vendor/lge" name="g3-aosp-N/proprietary_vendor_lge" remote="github" revision="cm-14.1" />
-<!-- END G3-Specific -->
-
-<!-- hammerhead-Specific -->
-  <project path="device/lge/hammerhead" name="android_device_lge_hammerhead" remote="pure-caf" />
-  <project path="kernel/lge/hammerhead" name="Unlegacy-Android/android_kernel_lge_hammerhead" remote="github" revision="stable" />
-<!-- END hammerhead-Specific -->
-
+<!-- Xiaomi Redmi Note 3 Specific -->
+  <project path="device/xiaomi/kenzo" name="device_xiaomi_kenzo" remote="android-caf" />
+  <project path="device/xiaomi/msm8956-common" name="device_xiaomi_msm8956-common" remote="android-caf" />
+  <project path="kernel/xiaomi/msm8956" name="kernel_xiaomi_msm8956" remote="android-caf" />
+<!-- END Xiaomi Redmi Note 3 Specific -->
 
 <!-- LINEAGEOS -->
   <project name="android_device_qcom_common" path="device/qcom/common" remote="laos" />
