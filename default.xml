@@ -81,6 +81,11 @@
   <project path="kernel/lge/hammerhead" name="Unlegacy-Android/android_kernel_lge_hammerhead" remote="github" revision="stable" />
 <!-- END hammerhead-Specific -->
 
+<!-- Xiaomi Redmi Note 3 Specific -->
+  <project path="device/xiaomi/kenzo" name="device_xiaomi_kenzo" remote="android-caf" />
+  <project path="device/xiaomi/msm8956-common" name="device_xiaomi_msm8956-common" remote="android-caf" />
+  <project path="kernel/xiaomi/msm8956" name="kernel_xiaomi_msm8956" remote="android-caf" />
+<!-- END Xiaomi Redmi Note 3 Specific --
 
 <!-- LINEAGEOS -->
   <project name="android_device_qcom_common" path="device/qcom/common" remote="laos" />
